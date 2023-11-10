@@ -1,8 +1,6 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
 
-class MainActivity : ComponentActivity() {
+class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -24,31 +22,26 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("peepee")
+                    Greeting2("Android")
                 }
             }
         }
-        setContentView(R.layout.my_layout)
-        val namePageButton = findViewById<Button>(R.id.button)
-        namePageButton.setOnClickListener{
-            val Intent = Intent(this,NamePage::class.java)
-            startActivity(Intent)
-        }
+        setContentView(R.layout.name_page)
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting2(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
     )
 }
 
-@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun GreetingPreview2() {
     MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme {
-        Greeting("peepee")
+        Greeting2("Android")
     }
 }
