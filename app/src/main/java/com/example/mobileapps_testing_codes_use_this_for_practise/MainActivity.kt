@@ -38,6 +38,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Surface (color = Color.Cyan){
