@@ -28,15 +28,15 @@ class NamePage : ComponentActivity() {
                 }
             }
         }
-        setContentView(R.layout.name_page)
-
-        val calendarPageButton = findViewById<Button>(R.id.button3)
-        calendarPageButton.setOnClickListener{
-            val Intent = Intent(this, CalendarPage::class.java)
-            startActivity(Intent)
+//        setContentView(R.layout.name_page)
+////
+//        val calendarPageButton = findViewById<Button>(R.id.button3)
+//        calendarPageButton.setOnClickListener{
+//            val Intent = Intent(this, CalendarPage::class.java)
+//            startActivity(Intent)
         }
     }
-}
+
 
 @Composable
 fun Greeting2(name: String, modifier: Modifier = Modifier) {
