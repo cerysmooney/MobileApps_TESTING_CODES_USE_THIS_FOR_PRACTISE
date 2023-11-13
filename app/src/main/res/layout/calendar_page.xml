@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/happy">
 
     <!--text view for displaying the selected date-->
     <TextView
@@ -13,10 +14,10 @@
         android:layout_margin="8dp"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Current Date"
+        android:text="Calendar"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="32dp"
         android:textStyle="bold" />
 
     <!-- Add CalendarView to display the Calendar -->
@@ -25,6 +26,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idTVDate"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+        android:scaleY="1" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="451dp"
+        android:background="@drawable/rounded_circle_happy"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="345dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="372dp"
+        android:background="@drawable/rounded_circle_awesome"
+        android:text="25" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="186dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="372dp"
+        android:background="@drawable/rounded_circle_okay"
+        android:text="22" />
 
 </RelativeLayout>
