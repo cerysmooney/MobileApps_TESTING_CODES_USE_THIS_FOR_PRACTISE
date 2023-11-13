@@ -39,7 +39,6 @@ class MainActivity : ComponentActivity() {
                     progress <= 3 -> text.text = "HAPPY"
                     progress <= 4 -> text.text = "AWESOME"
                     else -> text.text = "AWFUL"
-
                 }
             }
 
