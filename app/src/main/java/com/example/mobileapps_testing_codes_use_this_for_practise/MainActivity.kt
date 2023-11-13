@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
+import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
 
@@ -28,15 +29,18 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.my_layout)
 
         val seek = findViewById<SeekBar>(R.id.seekBar2)
-        val awful = findViewById<TextView>(R.id.awful_emotion)
-        val sad = findViewById<TextView>(R.id.sad_emotion)
-        val okay = findViewById<TextView>(R.id.ok_emotion)
-        val happy = findViewById<TextView>(R.id.happy_emotion)
-        val awesome = findViewById<TextView>(R.id.awesome_emotion)
+        val text = findViewById<TextView>(R.id.emotions)
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean){
-                awful.setText("$awful")
+                when {
+                    progress >= 1 -> text.text = "SAD"
+                    progress <= 2 -> text.text = "OKAY"
+                    progress <= 3 -> text.text = "HAPPY"
+                    progress <= 4 -> text.text = "AWESOME"
+                    else -> text.text = "AWFUL"
+
+                }
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
