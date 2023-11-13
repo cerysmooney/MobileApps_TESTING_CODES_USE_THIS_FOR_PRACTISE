@@ -43,58 +43,9 @@
         app:layout_constraintVertical_bias="0.087" />
 
     <TextView
-        android:id="@+id/awful_emotion"
+        android:id="@+id/emotions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AWFUL"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/sad_emotion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SAD"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/ok_emotion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OKAY"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/happy_emotion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HAPPY"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/awesome_emotion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AWESOME"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
+import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
 
@@ -28,48 +29,16 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.my_layout)
 
         val seek = findViewById<SeekBar>(R.id.seekBar2)
-        val awful = findViewById<TextView>(R.id.awful_emotion)
-        val sad = findViewById<TextView>(R.id.sad_emotion)
-        val okay = findViewById<TextView>(R.id.ok_emotion)
-        val happy = findViewById<TextView>(R.id.happy_emotion)
-        val awesome = findViewById<TextView>(R.id.awesome_emotion)
+        val text = findViewById<TextView>(R.id.emotions)
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean){
-                if (progress == 0){
-                    awful.isVisible
-                    sad.isInvisible
-                    okay.isInvisible
-                    happy.isInvisible
-                    awesome.isInvisible
-                }
-                else if (progress == 1){
-                    awful.isInvisible
-                    sad.isVisible
-                    okay.isInvisible
-                    happy.isInvisible
-                    awesome.isInvisible
-                }
-                else if (progress == 2){
-                    awful.isInvisible
-                    sad.isInvisible
-                    okay.isVisible
-                    happy.isInvisible
-                    awesome.isInvisible
-                }
-                else if (progress == 3){
-                    awful.isInvisible
-                    sad.isVisible
-                    okay.isInvisible
-                    happy.isVisible
-                    awesome.isInvisible
-                }
-                else if (progress == 4){
-                    awful.isInvisible
-                    sad.isInvisible
-                    okay.isInvisible
-                    happy.isInvisible
-                    awesome.isVisible
+                when {
+                    progress >= 1 -> text.text = "SAD"
+                    progress <= 2 -> text.text = "OKAY"
+                    progress <= 3 -> text.text = "HAPPY"
+                    progress <= 4 -> text.text = "AWESOME"
+                    else -> text.text = "AWFUL"
                 }
             }
 

@@ -4,18 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFCA28"
     tools:context=".NamePage">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calendar"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="397dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FFD467"
+        android:padding="10dp"
+        android:text="What would you like to be reffered to as?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintVertical_bias="0.087" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:text="Continue"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="613dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="176dp"
+        android:layout_height="281dp"
+        android:src="@drawable/awesomeowl"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="299dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#7E4F25"
+        android:hint="Name:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="480dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
