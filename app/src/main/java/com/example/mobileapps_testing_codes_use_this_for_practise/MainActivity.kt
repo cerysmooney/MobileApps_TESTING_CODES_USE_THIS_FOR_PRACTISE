@@ -36,41 +36,7 @@ class MainActivity : ComponentActivity() {
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean){
-                if (progress == 0){
-                    awful.isVisible
-                    sad.isInvisible
-                    okay.isInvisible
-                    happy.isInvisible
-                    awesome.isInvisible
-                }
-                else if (progress == 1){
-                    awful.isInvisible
-                    sad.isVisible
-                    okay.isInvisible
-                    happy.isInvisible
-                    awesome.isInvisible
-                }
-                else if (progress == 2){
-                    awful.isInvisible
-                    sad.isInvisible
-                    okay.isVisible
-                    happy.isInvisible
-                    awesome.isInvisible
-                }
-                else if (progress == 3){
-                    awful.isInvisible
-                    sad.isVisible
-                    okay.isInvisible
-                    happy.isVisible
-                    awesome.isInvisible
-                }
-                else if (progress == 4){
-                    awful.isInvisible
-                    sad.isInvisible
-                    okay.isInvisible
-                    happy.isInvisible
-                    awesome.isVisible
-                }
+                awful.setText("$awful")
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
