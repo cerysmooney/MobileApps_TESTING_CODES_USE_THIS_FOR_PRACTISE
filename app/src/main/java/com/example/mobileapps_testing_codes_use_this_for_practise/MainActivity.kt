@@ -30,15 +30,23 @@ class MainActivity : ComponentActivity() {
 
         val seek = findViewById<SeekBar>(R.id.seekBar2)
         val text = findViewById<TextView>(R.id.emotions)
+        val owlIMG = findViewById<ImageView>(R.id.owl_images)
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean){
                 when {
-                    progress >= 1 -> text.text = "SAD"
+                    progress <= 0 -> text.text = "AWFUL"
+                    progress <= 1 -> text.text = "SAD"
                     progress <= 2 -> text.text = "OKAY"
                     progress <= 3 -> text.text = "HAPPY"
-                    progress <= 4 -> text.text = "AWESOME"
-                    else -> text.text = "AWFUL"
+                    else -> text.text = "AWESOME"
+                }
+                when {
+                    progress <= 0 -> owlIMG.setImageResource(R.drawable.awful_owl)
+                    progress <= 1 -> owlIMG.setImageResource(R.drawable.sadowl)
+                    progress <= 2 -> owlIMG.setImageResource(R.drawable.okowl)
+                    progress <= 3 -> owlIMG.setImageResource(R.drawable.happyowl)
+                    else -> owlIMG.setImageResource(R.drawable.awesomeowl)
                 }
             }
 

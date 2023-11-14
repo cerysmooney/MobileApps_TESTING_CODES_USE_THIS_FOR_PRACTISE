@@ -32,10 +32,10 @@
         app:layout_constraintVertical_bias="0.147" />
 
     <ImageView
-        android:id="@+id/awful_owl"
+        android:id="@+id/owl_images"
         android:layout_width="177dp"
         android:layout_height="549dp"
-        android:src="@drawable/awful_owl"
+        android:src="@drawable/okowl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp"
+        android:text="OKAY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
