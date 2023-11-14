@@ -28,7 +28,7 @@ class NamePage : ComponentActivity() {
                 }
             }
         }
-//        setContentView(R.layout.name_page)
+        setContentView(R.layout.name_page)
 ////
 //        val calendarPageButton = findViewById<Button>(R.id.button3)
 //        calendarPageButton.setOnClickListener{

@@ -9,6 +9,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import android.widget.CalendarView.OnDateChangeListener
 import android.widget.TextView
+import android.widget.Toast
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -22,26 +23,13 @@ class CalendarPage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calendar_page)
 
-        // initializing variables of
-        // list view with their ids.
-        dateTV = findViewById(R.id.idTVDate)
-        calendarView = findViewById(R.id.calendarView)
+        val calendarView = findViewById<CalendarView>(R.id.calendarView)
 
-        // on below line we are adding set on
-        // date change listener for calendar view.
-        calendarView
-            .setOnDateChangeListener(
-                OnDateChangeListener { view, year, month, dayOfMonth ->
-                    // In this Listener we are getting values
-                    // such as year, month and day of month
-                    // on below line we are creating a variable
-                    // in which we are adding all the variables in it.
-                    val Date = (dayOfMonth.toString() + "-"
-                            + (month + 1) + "-" + year)
-
-                    // set this date in TextView for Display
-                    dateTV.setText(Date)
-                })
+        // Set a listener for date changes
+        calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
+            val selectedDate = "$year-${month + 1}-$dayOfMonth"
+            Toast.makeText(this, "Selected date: $selectedDate", Toast.LENGTH_SHORT).show()
+        }
 
     }
 }
