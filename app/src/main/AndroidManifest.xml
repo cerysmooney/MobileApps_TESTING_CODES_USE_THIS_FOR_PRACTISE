@@ -18,12 +18,12 @@
             android:label="@string/title_activity_calendar_page"
             android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE" />
         <activity
-            android:name=".NamePage"
+            android:name=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_name_page"
             android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE" />
         <activity
-            android:name=".MainActivity"
+            android:name=".NamePage"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE">
