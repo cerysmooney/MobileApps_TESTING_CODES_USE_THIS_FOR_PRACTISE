@@ -20,8 +20,8 @@ class NamePage : ComponentActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
-        val owl = findViewById<ImageView>(R.id.nameOwl)
-        val button = findViewById<Button>(R.id.continueButton)
+//        val owl = findViewById<ImageView>(R.id.nameOwl)
+//        val button = findViewById<Button>(R.id.continueButton)
 
 //
 
