@@ -17,17 +17,6 @@ import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.Mobil
 class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting2("Android")
-                }
-            }
-        }
         setContentView(R.layout.name_page)
 ////
 //        val calendarPageButton = findViewById<Button>(R.id.button3)
