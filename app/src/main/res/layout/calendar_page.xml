@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/idTVDate"
         android:layout_marginTop="30dp"
+        android:forceDarkAllowed="false"
         android:scaleY="1" />
 
     <Button
