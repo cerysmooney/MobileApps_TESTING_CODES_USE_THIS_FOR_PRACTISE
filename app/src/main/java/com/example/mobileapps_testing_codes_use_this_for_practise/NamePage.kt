@@ -1,7 +1,9 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,7 +20,10 @@ class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
-
+        val bgcolorsaved = intent.getStringExtra("saveBackground")
+        if (bgcolorsaved != null) {
+            Log.d(TAG, bgcolorsaved)
+        }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
             val Intent = Intent(this, CalendarPage::class.java)
