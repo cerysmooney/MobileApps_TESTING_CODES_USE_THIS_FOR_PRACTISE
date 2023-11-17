@@ -21,16 +21,14 @@ class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
-        val bgcolorsaved = intent.getStringExtra("saveBackground")
-        val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout).apply {
+        val rootView = findViewById<ConstraintLayout>(R.id.namePageLayout) // replace with your root layout
 
-        }
-        if (bgcolorsaved != null) {
-            Log.d(TAG, bgcolorsaved)
+        // Retrieve the background color value from the Intent
+        val backgroundColor = intent.getIntExtra("saveBackground", android.graphics.Color.WHITE)
 
+        // Set the background color of the root layout
+        rootView.setBackgroundColor(backgroundColor)
 
-
-        }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
             val Intent = Intent(this, CalendarPage::class.java)
