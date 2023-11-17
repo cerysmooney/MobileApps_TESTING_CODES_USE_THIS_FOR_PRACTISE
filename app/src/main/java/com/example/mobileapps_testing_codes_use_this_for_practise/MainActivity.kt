@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         val text = findViewById<TextView>(R.id.emotions)
         val owlIMG = findViewById<ImageView>(R.id.owl_images)
         val colorBG = findViewById<ConstraintLayout>(R.id.BGColor)
-        val backgroundColor = "88BB22"
+        var backgroundColor = "88BB22"
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
@@ -39,14 +39,16 @@ class MainActivity : ComponentActivity() {
                     progress <= 3 -> owlIMG.setImageResource(R.drawable.happyowl)
                     else -> owlIMG.setImageResource(R.drawable.awesomeowl)
                 }
-                val backgroundColor = when {
-                    progress <= 0 -> "#4411CC"
-                    progress <= 1 -> "#0066CC"
-                    progress <= 2 -> "#FF9933"
-                    progress <= 3 -> "#FFCC00"
-                    else -> "#88BB22"
+
+                backgroundColor = when {
+                    progress <= 0 -> "#4C2899"
+                    progress <= 1 -> "#6A77F0"
+                    progress <= 2 -> "#F49B55"
+                    progress <= 3 -> "#FFB800"
+                    else -> "#4CB543"
                 }
                 colorBG.setBackgroundColor(Color.parseColor(backgroundColor))
+
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
@@ -62,8 +64,10 @@ class MainActivity : ComponentActivity() {
                 it.putExtra("saveBackground", backgroundColor)
                 startActivity(it)
             }
-//            startActivity(Intent)
 
+//            val Intent2 = Intent(this, HomePage::class.java ).also {
+//                it.putExtra("saveBackground", backgroundColor)
+//            }
 
         }
 
