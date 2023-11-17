@@ -8,6 +8,7 @@
     android:background="#FF9933"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -21,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.077" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -33,6 +35,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.147" />
 
+
     <ImageView
         android:id="@+id/owl_images"
         android:layout_width="177dp"
@@ -43,6 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.087" />
+
 
     <TextView
         android:id="@+id/emotions"
@@ -55,6 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.671" />
+
 
     <SeekBar
         android:id="@+id/seekBar2"
@@ -70,6 +75,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.791" />
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -82,4 +88,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.906" />
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
