@@ -58,6 +58,9 @@ class MainActivity : ComponentActivity() {
         namePageButton.setOnClickListener {
             val Intent = Intent(this, NamePage::class.java)
             startActivity(Intent)
+
+
         }
+
     }
 }

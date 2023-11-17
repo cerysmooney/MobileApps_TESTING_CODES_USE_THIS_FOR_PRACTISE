@@ -18,9 +18,9 @@
             android:label="@string/title_activity_home_page"
             android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE" />
         <activity
-            android:name=".Checklist"
+            android:name=".GoalsPage"
             android:exported="false"
-            android:label="@string/title_activity_checklist"
+            android:label="@string/title_activity_goals_page"
             android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE" />
         <activity
             android:name=".NamePage"

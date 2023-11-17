@@ -4,4 +4,5 @@
     <string name="title_activity_calendar_page">CalendarPage</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_checklist">Checklist</string>
+    <string name="title_activity_goals_page">GoalsPage</string>
 </resources>
