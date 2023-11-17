@@ -5,4 +5,5 @@
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_checklist">Checklist</string>
     <string name="title_activity_goals_page">GoalsPage</string>
+    <string name="title_activity_expand_on_feelings_page">ExpandOnFeelingsPage</string>
 </resources>
