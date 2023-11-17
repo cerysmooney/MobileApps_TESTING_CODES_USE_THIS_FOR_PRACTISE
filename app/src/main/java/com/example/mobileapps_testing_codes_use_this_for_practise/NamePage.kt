@@ -30,9 +30,9 @@ class NamePage : ComponentActivity() {
 
        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
-        if (bgcolorsaved != null) {
-
-        }
+//        if (bgcolorsaved != null) {
+//
+//        }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
             val Intent = Intent(this, HomePage::class.java)
