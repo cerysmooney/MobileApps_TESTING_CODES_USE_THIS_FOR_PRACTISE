@@ -28,48 +28,9 @@
         android:layout_below="@id/idTVDate"
         android:layout_marginTop="30dp"
         android:forceDarkAllowed="false"
-        android:scaleY="1" />
+        android:scaleY="1"
+        android:selectedWeekBackgroundColor="#ffffff" />
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="38dp"
-        android:layout_height="36dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginEnd="239dp"
-        android:layout_marginBottom="451dp"
-        android:background="@drawable/rounded_circle_happy"
-        android:text="7" />
 
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="38dp"
-        android:layout_height="36dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="345dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="372dp"
-        android:background="@drawable/rounded_circle_awesome"
-        android:text="25" />
-
-    <Button
-        android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="38dp"
-        android:layout_height="36dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="186dp"
-        android:layout_marginEnd="187dp"
-        android:layout_marginBottom="372dp"
-        android:background="@drawable/rounded_circle_okay"
-        android:text="22" />
 
 </RelativeLayout>
