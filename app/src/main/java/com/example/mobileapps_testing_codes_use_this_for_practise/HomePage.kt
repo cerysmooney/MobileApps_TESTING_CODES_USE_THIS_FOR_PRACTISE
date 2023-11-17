@@ -23,10 +23,10 @@ class HomePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
 
-        val bgcolorsaved = intent.getStringExtra("saveBG")
-        val checkcolor = findViewById<ConstraintLayout>(R.id.homePageLayout)
-
-        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
+//        val bgcolorsaved = intent.getStringExtra("saveBG")
+//        val checkcolor = findViewById<ConstraintLayout>(R.id.homePageLayout)
+//
+//        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
       val name = intent.getStringExtra("textSave")
         val introduction = findViewById<TextView>(R.id.intro).apply{
