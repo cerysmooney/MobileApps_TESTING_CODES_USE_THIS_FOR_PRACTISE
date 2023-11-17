@@ -64,9 +64,9 @@ class MainActivity : ComponentActivity() {
                 it.putExtra("saveBackground", backgroundColor)
                 startActivity(it)
             }
-            val Intent2 = Intent(this, HomePage::class.java ).also {
-                it.putExtra("saveBG", backgroundColor)
-            }
+//            val intent = Intent(this, HomePage::class.java ).also {
+//                it.putExtra("saveBG", backgroundColor)
+
 
         }
 
