@@ -3,6 +3,8 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -19,6 +21,10 @@ class HomePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
 
+      val name = intent.getStringExtra("textSave")
+        val introduction = findViewById<TextView>(R.id.intro).apply{
+            text = "Hello" +  " " + name
+        }
 
     }
 }

@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,7 +24,7 @@ class NamePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
         val bgcolorsaved = intent.getStringExtra("saveBackground")
-
+        val editText = findViewById<EditText>(R.id.enterName)
        val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 
        // Log.d(TAG, checkcolor)
@@ -35,8 +36,12 @@ class NamePage : ComponentActivity() {
 //        }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
-            val Intent = Intent(this, HomePage::class.java)
-            startActivity(Intent)
+            val name = editText.text.toString()
+            val Intent = Intent(this, HomePage::class.java).also{
+                it.putExtra("textSave", name)
+                startActivity(it)
+            }
+//            startActivity(Intent)
         }
     }
 }

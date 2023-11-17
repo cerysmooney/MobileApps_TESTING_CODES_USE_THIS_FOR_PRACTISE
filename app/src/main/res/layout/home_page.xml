@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/intro"
         android:layout_width="249dp"
         android:layout_height="55dp"
         android:text="Hello..."
