@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
 import com.google.android.material.textfield.TextInputEditText
 class NamePage : ComponentActivity() {
@@ -21,8 +22,14 @@ class NamePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
         val bgcolorsaved = intent.getStringExtra("saveBackground")
+        val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout).apply {
+
+        }
         if (bgcolorsaved != null) {
             Log.d(TAG, bgcolorsaved)
+
+
+
         }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
