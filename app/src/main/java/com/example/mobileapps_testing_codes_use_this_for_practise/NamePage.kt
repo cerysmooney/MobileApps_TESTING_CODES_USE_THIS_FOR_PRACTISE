@@ -35,7 +35,7 @@ class NamePage : ComponentActivity() {
         }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
-            val Intent = Intent(this, CalendarPage::class.java)
+            val Intent = Intent(this, HomePage::class.java)
             startActivity(Intent)
         }
     }
