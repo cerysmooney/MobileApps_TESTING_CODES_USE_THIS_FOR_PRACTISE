@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : ComponentActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.my_layout)
