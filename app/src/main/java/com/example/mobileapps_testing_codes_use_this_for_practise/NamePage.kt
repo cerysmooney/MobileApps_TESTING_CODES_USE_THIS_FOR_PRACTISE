@@ -2,6 +2,7 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -22,13 +23,14 @@ class NamePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
         val bgcolorsaved = intent.getStringExtra("saveBackground")
-        val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout).apply {
 
-        }
+       val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
+
+       // Log.d(TAG, checkcolor)
+
+       checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
+
         if (bgcolorsaved != null) {
-            Log.d(TAG, bgcolorsaved)
-
-
 
         }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
