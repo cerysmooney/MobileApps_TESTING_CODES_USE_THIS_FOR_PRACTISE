@@ -22,7 +22,6 @@ class MainActivity : ComponentActivity() {
         val owlIMG = findViewById<ImageView>(R.id.owl_images)
         val colorBG = findViewById<ConstraintLayout>(R.id.BGColor)
         var backgroundColor = "88BB22"
-        var startPoint = 0
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
@@ -53,9 +52,6 @@ class MainActivity : ComponentActivity() {
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                if (seekBar != null){
-                    startPoint = seekBar.progress
-                }
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
@@ -68,10 +64,9 @@ class MainActivity : ComponentActivity() {
                 it.putExtra("saveBackground", backgroundColor)
                 startActivity(it)
             }
-
-//            val Intent2 = Intent(this, HomePage::class.java ).also {
-//                it.putExtra("saveBackground", backgroundColor)
-//            }
+            val Intent2 = Intent(this, HomePage::class.java ).also {
+                it.putExtra("saveBG", backgroundColor)
+            }
 
         }
 
