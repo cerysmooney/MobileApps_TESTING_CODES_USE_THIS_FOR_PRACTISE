@@ -41,11 +41,11 @@ class MainActivity : ComponentActivity() {
                 }
 
                 backgroundColor = when {
-                    progress <= 0 -> "#4411CC"
-                    progress <= 1 -> "#0066CC"
-                    progress <= 2 -> "#FF9933"
-                    progress <= 3 -> "#FFCC00"
-                    else -> "#88BB22"
+                    progress <= 0 -> "#4C2899"
+                    progress <= 1 -> "#6A77F0"
+                    progress <= 2 -> "#F49B55"
+                    progress <= 3 -> "#FFB800"
+                    else -> "#4CB543"
                 }
                 colorBG.setBackgroundColor(Color.parseColor(backgroundColor))
 
