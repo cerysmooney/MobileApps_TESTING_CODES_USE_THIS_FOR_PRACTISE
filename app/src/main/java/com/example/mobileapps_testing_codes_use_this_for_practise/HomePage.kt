@@ -30,24 +30,34 @@ class HomePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
 
+        //Keeping the page background the same
         val imageChange = findViewById<ConstraintLayout>(R.id.homePageLayout)
 
+        //Calling values for the image buttons to allow for changing background
         val imageCross = findViewById<ImageButton>(R.id.imageCross)
+        val imageCross2 = findViewById<ImageButton>(R.id.imageCross2)
+        val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
+        val imageCross4 = findViewById<ImageButton>(R.id.imageCross4)
 
-
+        //Changing the background on click for each button
         imageCross.setOnClickListener{
             imageCross.setBackgroundResource(R.drawable.check)
         }
+        imageCross2.setOnClickListener{
+            imageCross2.setBackgroundResource(R.drawable.check)
+        }
+        imageCross3.setOnClickListener{
+            imageCross3.setBackgroundResource(R.drawable.check)
+        }
+        imageCross4.setOnClickListener{
+            imageCross4.setBackgroundResource(R.drawable.check)
+        }
 
-
-
+        //Displaying hello and the name chosen from the previous page
         val name = intent.getStringExtra("textSave")
         val introduction = findViewById<TextView>(R.id.intro).apply {
             text = "Hello" + " " + name
         }
-
-
-
         }
 }
 
