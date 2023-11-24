@@ -1,8 +1,10 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -21,12 +23,14 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         setContentView(R.layout.expand_on_feelings_page)
 
 
+
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
         val okayButton = findViewById<Button>(R.id.okayButton)
         val happyButton = findViewById<Button>(R.id.happyButton)
         val awesomeButton = findViewById<Button>(R.id.awesomeButton)
+
 
         awfulButton.setOnClickListener{
             colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
@@ -45,6 +49,11 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         }
 
 
+        val goToHomePage = findViewById<Button>(R.id.saveButton)
+        goToHomePage.setOnClickListener{
+            val Intent = Intent(this,HomePage::class.java)
+            startActivity(Intent)
+        }
     }
 
     }
