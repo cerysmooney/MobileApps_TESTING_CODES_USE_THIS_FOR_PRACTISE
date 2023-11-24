@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="@color/happy">
 
-
     <TextView
         android:id="@+id/intro"
         android:layout_width="249dp"
@@ -22,43 +21,55 @@
         app:layout_constraintVertical_bias="0.114" />
 
 
-
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="390dp"
-        android:layout_height="164dp"
+        android:layout_height="163dp"
         android:background="@drawable/rounded_textbox"
         android:text="   Expand On Your Feelings"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
+        app:layout_constraintVertical_bias="0.424" />
 
+    <ImageButton
+        android:id="@+id/imagePlusIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/plusicon"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="414dp"
-        android:layout_height="327dp"
-        android:background="@drawable/rounded_textbox"
+        android:layout_width="417dp"
+        android:layout_height="309dp"
+        android:background="@drawable/transparent_white_box"
         android:textSize="28sp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-
     <ImageButton
         android:id="@+id/imageCross"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/cross"
         android:scaleType="centerInside"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -67,24 +78,12 @@
         app:layout_constraintVertical_bias="0.65" />
 
     <ImageButton
-        android:id="@+id/imagePlusIcon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/plusicon"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
-
-    <ImageButton
         android:id="@+id/imageCross2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/cross"
         android:scaleType="centerInside"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -94,10 +93,11 @@
 
     <ImageButton
         android:id="@+id/imageCross3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/cross"
         android:scaleType="centerInside"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -107,10 +107,11 @@
 
     <ImageButton
         android:id="@+id/goalsPageButton"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/go"
         android:scaleType="centerInside"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -120,11 +121,12 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="298dp"
-        android:layout_height="58dp"
-        android:background="@drawable/transparent_textbox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/transparent_white_box"
         android:text="  Make Your Bed"
         android:textSize="30dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageCross"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,11 +135,12 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="298dp"
-        android:layout_height="58dp"
-        android:background="@drawable/transparent_textbox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/transparent_white_box"
         android:text="  Message A Friend"
         android:textSize="30dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageCross"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,11 +149,12 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="298dp"
-        android:layout_height="58dp"
-        android:background="@drawable/transparent_textbox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/transparent_white_box"
         android:text="  Brush Your Teeth"
         android:textSize="30dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageCross"
         app:layout_constraintHorizontal_bias="0.444"
@@ -160,17 +164,30 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="298dp"
-        android:layout_height="58dp"
-        android:background="@drawable/transparent_textbox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/transparent_white_box"
         android:text="  Add your own Goal..."
         android:textSize="30dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageCross"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageCross"
         app:layout_constraintVertical_bias="0.852" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

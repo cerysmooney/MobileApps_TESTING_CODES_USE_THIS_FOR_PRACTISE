@@ -31,8 +31,11 @@ class HomePage : ComponentActivity() {
         setContentView(R.layout.home_page)
 
         //Keeping the page background the same
-        val imageChange = findViewById<ConstraintLayout>(R.id.homePageLayout)
+        val bgcolorsaved = intent.getStringExtra("saveBackground")
+        val checkcolor = findViewById<ConstraintLayout>(R.id.homePageLayout)
 
+        // Log.d(TAG, checkcolor)
+        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
@@ -41,7 +44,8 @@ class HomePage : ComponentActivity() {
             startActivity(Intent)
         }
 
-
+        //make date
+        //dateTimeDisplay = findViewById<TextView>(R.id.textDate);
 
         //Calling values for the image buttons to allow for changing background
         val imageCross = findViewById<ImageButton>(R.id.imageCross)
