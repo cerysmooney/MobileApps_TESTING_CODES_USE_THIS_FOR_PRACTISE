@@ -22,6 +22,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
+import java.text.SimpleDateFormat
+import java.util.Date
 
 class HomePage : ComponentActivity() {
 
@@ -30,13 +32,6 @@ class HomePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
 
-        //Keeping the page background the same
-//        val bgcolorsaved = intent.getStringExtra("saveBackground")
-//        val checkcolor = findViewById<ConstraintLayout>(R.id.homePageLayout)
-
-        // Log.d(TAG, checkcolor)
-//        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
-
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener{
@@ -44,10 +39,10 @@ class HomePage : ComponentActivity() {
             startActivity(Intent)
         }
 
-        //make date
-
-
-
+        val textView: TextView = findViewById(R.id.dateAndTime)
+        val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
+        val currentDateAndTime: String = simpleDateFormat.format(Date())
+        textView.text = currentDateAndTime
 
         //Calling values for the image buttons to allow for changing background
         val imageCross = findViewById<ImageButton>(R.id.imageCross)
@@ -72,7 +67,7 @@ class HomePage : ComponentActivity() {
         //Displaying hello and the name chosen from the previous page
         val name = intent.getStringExtra("textSave")
         val introduction = findViewById<TextView>(R.id.intro).apply {
-            text = "Hello" + " " + name
+            text = "Hello " + name
         }
 
         //Button for getting to goals page
