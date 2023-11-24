@@ -70,8 +70,8 @@ class HomePage : ComponentActivity() {
         }
 
         //Button for getting to goals page
-        val goalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
-        goalsPageButton.setOnClickListener{
+        val homeGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
+        homeGoalsPageButton.setOnClickListener{
             val Intent = Intent(this,GoalsPage::class.java)
             startActivity(Intent)
         }
