@@ -39,6 +39,7 @@ class HomePage : ComponentActivity() {
             startActivity(Intent)
         }
 
+        //Getting date and displaying in textview
         val textView: TextView = findViewById(R.id.dateAndTime)
         val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
         val currentDateAndTime: String = simpleDateFormat.format(Date())
@@ -76,6 +77,9 @@ class HomePage : ComponentActivity() {
             val Intent = Intent(this,GoalsPage::class.java)
             startActivity(Intent)
         }
+
+
+
 
     }
 }
