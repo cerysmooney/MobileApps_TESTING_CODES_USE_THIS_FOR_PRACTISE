@@ -23,7 +23,6 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         setContentView(R.layout.expand_on_feelings_page)
 
 
-
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
@@ -32,28 +31,34 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         val awesomeButton = findViewById<Button>(R.id.awesomeButton)
 
 
-        awfulButton.setOnClickListener{
+        awfulButton.setOnClickListener {
             colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
         }
-        sadButton.setOnClickListener{
+        sadButton.setOnClickListener {
             colorBg.setBackgroundColor(Color.parseColor("#6A77F0"))
         }
-        okayButton.setOnClickListener{
+        okayButton.setOnClickListener {
             colorBg.setBackgroundColor(Color.parseColor("#F49B55"))
         }
-        happyButton.setOnClickListener{
+        happyButton.setOnClickListener {
             colorBg.setBackgroundColor(Color.parseColor("#FFB800"))
         }
-        awesomeButton.setOnClickListener{
+        awesomeButton.setOnClickListener {
             colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
         }
 
-
-        val goToHomePage = findViewById<Button>(R.id.saveButton)
-        goToHomePage.setOnClickListener{
+        val goToHomePage2 = findViewById<Button>(R.id.saveButton2)
+        goToHomePage2.setOnClickListener{
             val Intent = Intent(this,HomePage::class.java)
             startActivity(Intent)
         }
+        val goToHomePage = findViewById<Button>(R.id.saveButton)
+        goToHomePage.setOnClickListener {
+            val Intent = Intent(this, HomePage::class.java)
+            startActivity(Intent)
+
+
+        }
     }
 
-    }
+}
