@@ -8,15 +8,19 @@ import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
 
 class MainActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Thread.sleep(1000)
+        installSplashScreen()
         setContentView(R.layout.my_layout)
-
         val seek = findViewById<SeekBar>(R.id.seekBar2)
         val text = findViewById<TextView>(R.id.emotions)
         val owlIMG = findViewById<ImageView>(R.id.owl_images)
