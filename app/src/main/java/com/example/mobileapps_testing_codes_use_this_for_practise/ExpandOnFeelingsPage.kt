@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
@@ -30,7 +31,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.expand_on_feelings_page)
 
-
+        val editText = findViewById<EditText>(R.id.enterName)
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
@@ -64,13 +65,19 @@ class ExpandOnFeelingsPage : ComponentActivity() {
 
         val goToHomePage2 = findViewById<Button>(R.id.saveButton2)
         goToHomePage2.setOnClickListener{
-            val Intent = Intent(this,HomePage::class.java)
-            startActivity(Intent)
+            val name = editText.text.toString()
+            val Intent = Intent(this, HomePage::class.java).also {
+                it.putExtra("textSave", name)
+                startActivity(it)
+            }
         }
         val goToHomePage = findViewById<Button>(R.id.saveButton)
         goToHomePage.setOnClickListener {
-            val Intent = Intent(this, HomePage::class.java)
-            startActivity(Intent)
+            val name = editText.text.toString()
+            val Intent = Intent(this, HomePage::class.java).also{
+                it.putExtra("textSave", name)
+                startActivity(it)
+            }
 
 
         }
