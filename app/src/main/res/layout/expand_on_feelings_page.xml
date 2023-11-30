@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.623" />
 
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/cancelButton"
         android:layout_width="139dp"
         android:layout_height="53dp"
         android:text="Cancel"
@@ -135,7 +135,7 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/saveButton2"
+        android:id="@+id/saveButton"
         android:layout_width="139dp"
         android:layout_height="53dp"
         android:text="Save"
