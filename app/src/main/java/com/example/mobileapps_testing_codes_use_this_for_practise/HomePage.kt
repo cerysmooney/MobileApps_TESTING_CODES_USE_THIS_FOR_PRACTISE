@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.media.Image
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -57,10 +58,15 @@ class HomePage : ComponentActivity() {
         }
 
         //Displaying hello and the name chosen from the name page
-        val name = intent.getStringExtra("textSave")
+        //val name = intent.getStringExtra("textSave")
+        //Log.d("HomePage", "name: $name")
+        val callName = SharedValues.nameData
+        Log.d("HomePage", "callName: $callName")
         val introduction = findViewById<TextView>(R.id.intro).apply {
-            text = "Hello " + name
+            text = "Hello " + callName
         }
+
+        //Log.d("HomePage","name: $callName")
 
         //Button for getting to goals page
         val homeGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
