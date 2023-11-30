@@ -16,8 +16,13 @@ class NamePage : ComponentActivity() {
         val editText = findViewById<EditText>(R.id.enterName)
         val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 
+       // Log.d(TAG, checkcolor)
+
        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
+//        if (bgcolorsaved != null) {
+//
+//        }
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
             val name = editText.text.toString()
