@@ -14,7 +14,7 @@ class NamePage : ComponentActivity() {
         setContentView(R.layout.name_page)
         val bgcolorsaved = intent.getStringExtra("saveBackground")
         val editText = findViewById<EditText>(R.id.enterName)
-       val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
+        val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 
        // Log.d(TAG, checkcolor)
 

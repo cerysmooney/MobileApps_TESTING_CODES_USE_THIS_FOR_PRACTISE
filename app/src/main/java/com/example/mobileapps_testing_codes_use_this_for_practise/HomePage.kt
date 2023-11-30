@@ -26,20 +26,9 @@ import java.text.SimpleDateFormat
 import java.util.Date
 
 class HomePage : ComponentActivity() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
-
-
-
-        //Button for Expanding on Feelings
-        val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
-        expandOnFeelingsPageButton.setOnClickListener{
-            val Intent = Intent(this,ExpandOnFeelingsPage::class.java)
-            startActivity(Intent)
-        }
 
         //Getting date and displaying in textview
         val textView: TextView = findViewById(R.id.dateAndTime)
@@ -67,7 +56,7 @@ class HomePage : ComponentActivity() {
             imageCross4.setBackgroundResource(R.drawable.check)
         }
 
-        //Displaying hello and the name chosen from the previous page
+        //Displaying hello and the name chosen from the name page
         val name = intent.getStringExtra("textSave")
         val introduction = findViewById<TextView>(R.id.intro).apply {
             text = "Hello " + name
@@ -80,7 +69,13 @@ class HomePage : ComponentActivity() {
             startActivity(Intent)
         }
 
+        //Button for Expanding on Feelings
+        val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
+        expandOnFeelingsPageButton.setOnClickListener{
 
+            val intent = Intent(this,ExpandOnFeelingsPage::class.java)
+            startActivity(intent)
+        }
 
 
     }
