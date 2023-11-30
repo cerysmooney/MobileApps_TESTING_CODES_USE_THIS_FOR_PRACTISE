@@ -63,25 +63,19 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
         }
 
-        val goToHomePage2 = findViewById<Button>(R.id.saveButton2)
-        goToHomePage2.setOnClickListener{
-            val name = editText.text.toString()
-            val Intent = Intent(this, HomePage::class.java).also {
-                it.putExtra("textSave", name)
-                startActivity(it)
-            }
-        }
         val goToHomePage = findViewById<Button>(R.id.saveButton)
         goToHomePage.setOnClickListener {
-            val name = editText.text.toString()
-            val Intent = Intent(this, HomePage::class.java).also{
-                it.putExtra("textSave", name)
-                startActivity(it)
-            }
+           val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+        }
 
-
+        val goToHomePage2 = findViewById<Button>(R.id.cancelButton)
+        goToHomePage2.setOnClickListener {
+           val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
         }
     }
+
 
     private fun pickImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)
