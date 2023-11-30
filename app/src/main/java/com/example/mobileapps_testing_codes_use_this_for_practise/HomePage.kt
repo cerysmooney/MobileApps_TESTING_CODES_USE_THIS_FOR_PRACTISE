@@ -65,7 +65,7 @@ class HomePage : ComponentActivity() {
         //Displaying hello and the name chosen from the name page
         //val name = intent.getStringExtra("textSave")
         //Log.d("HomePage", "name: $name")
-        val callName = SharedValues.nameData
+        val callName = NameValue.nameData
         Log.d("HomePage", "callName: $callName")
         val introduction = findViewById<TextView>(R.id.intro).apply {
             text = "Hello " + callName

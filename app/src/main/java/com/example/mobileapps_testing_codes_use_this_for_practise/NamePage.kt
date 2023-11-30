@@ -10,7 +10,7 @@ import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
-class SharedValues {
+class NameValue {
     companion object {
         var nameData: String = ""
     }
@@ -36,8 +36,8 @@ class NamePage : ComponentActivity() {
 
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
-            SharedValues.nameData = editText.text.toString()
-            val setName = SharedValues.nameData
+            NameValue.nameData = editText.text.toString()
+            val setName = NameValue.nameData
 
             Log.d("NamePage", "setName: $setName")
             //val name = editText.text.toString()
