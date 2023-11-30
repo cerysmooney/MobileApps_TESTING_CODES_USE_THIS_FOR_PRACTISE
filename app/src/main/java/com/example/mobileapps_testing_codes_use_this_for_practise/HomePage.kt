@@ -32,6 +32,8 @@ class HomePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
 
+
+
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener{

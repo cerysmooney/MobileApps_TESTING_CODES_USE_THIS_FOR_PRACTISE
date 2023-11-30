@@ -177,7 +177,7 @@
         android:layout_height="50dp"
         android:background="@drawable/transparent_white_box"
         android:elevation="10dp"
-        android:text="  Add your own Goal..."
+        android:text="  See More..."
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageCross"
