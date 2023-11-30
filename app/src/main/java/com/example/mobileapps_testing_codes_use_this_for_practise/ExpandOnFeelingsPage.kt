@@ -76,7 +76,6 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         }
     }
 
-
     private fun pickImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
