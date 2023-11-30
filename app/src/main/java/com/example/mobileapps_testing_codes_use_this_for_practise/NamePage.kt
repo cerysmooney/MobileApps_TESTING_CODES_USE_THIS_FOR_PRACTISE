@@ -20,7 +20,8 @@ class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
-        val bgcolorsaved = intent.getStringExtra("saveBackground")
+        //val bgcolorsaved = intent.getStringExtra("saveBackground")
+        val bgcolorsaved = bgValue.bgColourChange
         val editText = findViewById<EditText>(R.id.enterName)
         val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 

@@ -31,6 +31,11 @@ class HomePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
 
+        //BG background
+        val bgcolorsaved = bgValue.bgColourChange
+        val checkcolor = findViewById<ConstraintLayout>(R.id.homePageLayout)
+        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
+
         //Getting date and displaying in textview
         val textView: TextView = findViewById(R.id.dateAndTime)
         val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
