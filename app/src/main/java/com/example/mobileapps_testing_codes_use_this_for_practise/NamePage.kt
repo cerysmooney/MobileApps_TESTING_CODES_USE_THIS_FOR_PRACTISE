@@ -10,7 +10,7 @@ import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
-class SharedValues {
+class NameValue {
     companion object {
         var nameData: String = ""
     }
@@ -20,7 +20,8 @@ class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.name_page)
-        val bgcolorsaved = intent.getStringExtra("saveBackground")
+        //val bgcolorsaved = intent.getStringExtra("saveBackground")
+        val bgcolorsaved = bgValue.bgColourChange
         val editText = findViewById<EditText>(R.id.enterName)
         val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 
@@ -35,8 +36,8 @@ class NamePage : ComponentActivity() {
 
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
         calendarPageButton.setOnClickListener {
-            SharedValues.nameData = editText.text.toString()
-            val setName = SharedValues.nameData
+            NameValue.nameData = editText.text.toString()
+            val setName = NameValue.nameData
 
             Log.d("NamePage", "setName: $setName")
             //val name = editText.text.toString()

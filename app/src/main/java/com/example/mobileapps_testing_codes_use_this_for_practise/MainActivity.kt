@@ -3,6 +3,7 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.SeekBar
@@ -13,6 +14,11 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
 
+class bgValue{
+    companion object{
+        var bgColourChange: String = ""
+    }
+}
 class MainActivity : ComponentActivity() {
 
 
@@ -25,7 +31,10 @@ class MainActivity : ComponentActivity() {
         val text = findViewById<TextView>(R.id.emotions)
         val owlIMG = findViewById<ImageView>(R.id.owl_images)
         val colorBG = findViewById<ConstraintLayout>(R.id.BGColor)
+
+        //var backgroundColor = bgValue.bgColourChange
         var backgroundColor = "88BB22"
+        bgValue.bgColourChange = backgroundColor
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
@@ -64,8 +73,11 @@ class MainActivity : ComponentActivity() {
 
         val namePageButton = findViewById<Button>(R.id.button)
         namePageButton.setOnClickListener {
+            bgValue.bgColourChange = backgroundColor
+            val checkColor = bgValue.bgColourChange
+            Log.d("mainactivity", "color check: $checkColor")
             val Intent = Intent(this, NamePage::class.java ).also {
-                it.putExtra("saveBackground", backgroundColor)
+                //it.putExtra("saveBackground", backgroundColor)
                 startActivity(it)
             }
 //            val intent = Intent(this, HomePage::class.java ).also {

@@ -13,6 +13,7 @@
         android:layout_width="249dp"
         android:layout_height="55dp"
         android:text="Hello..."
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +24,7 @@
 
     <TextView
         android:id="@+id/dateAndTime"
+        android:textColor="#FFFFFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
