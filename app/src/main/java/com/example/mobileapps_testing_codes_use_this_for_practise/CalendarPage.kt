@@ -2,6 +2,7 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CalendarView
@@ -19,6 +20,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
+
+
+
 
 class CalendarPage : ComponentActivity() {
 
@@ -39,15 +43,15 @@ class CalendarPage : ComponentActivity() {
             selectedDateCircle.visibility = View.VISIBLE
 
             val layoutParams = FrameLayout.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
+                circleContainer.layoutParams.width,
+                circleContainer.layoutParams.height
             )
+            //layoutParams.gravity = Gravity.CENTER
+            //selectedDateCircle.layoutParams = layoutParams
+
             val intent = Intent(this, ExpandOnFeelingsPage::class.java)
             intent.putExtra("selectedDate", selectedDate)
             startActivity(intent)
-
-
-
         }
 
     }
