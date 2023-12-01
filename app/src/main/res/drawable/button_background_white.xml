@@ -6,7 +6,7 @@
     <corners android:radius="30dp" />
 
     <!--- This is the background color -->
-    <solid android:color="#99ffffff" />
+    <solid android:color="#88ffffff" />
 
     <!--- Setting the stroke around the box -->
     <stroke
