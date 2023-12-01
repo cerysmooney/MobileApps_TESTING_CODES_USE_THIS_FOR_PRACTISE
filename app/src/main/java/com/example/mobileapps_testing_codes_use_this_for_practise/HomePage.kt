@@ -77,7 +77,7 @@ class HomePage : ComponentActivity() {
         //Button for getting to goals page
         val homeGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
         homeGoalsPageButton.setOnClickListener{
-            val Intent = Intent(this,GoalsPage::class.java)
+            val Intent = Intent(this,CalendarPage::class.java)
             startActivity(Intent)
         }
 

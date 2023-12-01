@@ -1,5 +1,6 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.CalendarView
 import androidx.activity.ComponentActivity
@@ -26,7 +27,12 @@ class CalendarPage : ComponentActivity() {
 
         // Set a listener for date changes
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
-            val selectedDate = "$year-${month + 1}-$dayOfMonth"
+            val selectedDate = "$dayOfMonth-${month + 1}/$year"
+            val intent = Intent(this, ExpandOnFeelingsPage::class.java)
+            intent.putExtra("selectedDate", selectedDate)
+            startActivity(intent)
+
+
             Toast.makeText(this, "Selected date: $selectedDate", Toast.LENGTH_SHORT).show()
         }
 
