@@ -19,6 +19,7 @@ class NameValue {
 class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
         setContentView(R.layout.name_page)
         //val bgcolorsaved = intent.getStringExtra("saveBackground")
         val bgcolorsaved = bgValue.bgColourChange
