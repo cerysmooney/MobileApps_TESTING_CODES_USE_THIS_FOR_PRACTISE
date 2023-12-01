@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:background="#F49B55" >
 
-
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="271dp"
