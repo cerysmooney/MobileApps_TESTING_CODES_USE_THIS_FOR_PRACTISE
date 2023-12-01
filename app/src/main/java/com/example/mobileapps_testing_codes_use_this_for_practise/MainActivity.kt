@@ -79,6 +79,9 @@ class MainActivity : ComponentActivity() {
             val Intent = Intent(this, NamePage::class.java ).also {
                 //it.putExtra("saveBackground", backgroundColor)
                 startActivity(it)
+
+
+//                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_left)
             }
 //            val intent = Intent(this, HomePage::class.java ).also {
 //                it.putExtra("saveBG", backgroundColor)
