@@ -49,7 +49,7 @@ class CalendarPage : ComponentActivity() {
             //layoutParams.gravity = Gravity.CENTER
             //selectedDateCircle.layoutParams = layoutParams
 
-            val intent = Intent(this, ExpandOnFeelingsPage::class.java)
+            val intent = Intent(this, ReflectionPage::class.java)
             intent.putExtra("selectedDate", selectedDate)
             startActivity(intent)
         }
