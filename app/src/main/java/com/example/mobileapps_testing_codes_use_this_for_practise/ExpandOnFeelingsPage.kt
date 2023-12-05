@@ -6,19 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
 
 class ExpandOnFeelingsPage : ComponentActivity() {
 
@@ -33,7 +23,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         setContentView(R.layout.expand_on_feelings_page)
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
 
-        val editText = findViewById<EditText>(R.id.enterName)
+        findViewById<EditText>(R.id.enterName)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
         val okayButton = findViewById<Button>(R.id.okayButton)
