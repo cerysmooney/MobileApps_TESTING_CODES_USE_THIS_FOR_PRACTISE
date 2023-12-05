@@ -45,6 +45,7 @@ import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.Mobil
 import java.text.SimpleDateFormat
 import java.util.Date
 
+
 class HomePage : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
