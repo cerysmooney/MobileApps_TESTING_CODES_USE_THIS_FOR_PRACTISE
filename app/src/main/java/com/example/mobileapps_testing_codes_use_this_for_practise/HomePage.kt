@@ -100,11 +100,11 @@ class HomePage : ComponentActivity() {
         //Log.d("HomePage","name: $callName")
 
         //Button for getting to goals page
-//        val homeGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
-//        homeGoalsPageButton.setOnClickListener{
-//            val Intent = Intent(this,GoalsPage::class.java)
-//            startActivity(Intent)
-//        }
+        val homeGoalsPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
+        homeGoalsPageButton.setOnClickListener{
+            val Intent = Intent(this,CalendarPage::class.java)
+            startActivity(Intent)
+        }
 
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)

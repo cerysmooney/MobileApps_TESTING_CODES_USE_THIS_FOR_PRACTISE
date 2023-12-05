@@ -65,10 +65,19 @@
             android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="@+id/textView4"
             app:layout_constraintTop_toTopOf="@+id/textView4"
-            
             />
 
-
+        <ImageButton
+            android:id="@+id/reflectionPageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="312dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/plusicon"
+            android:elevation="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

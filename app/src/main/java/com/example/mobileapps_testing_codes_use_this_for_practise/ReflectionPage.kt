@@ -22,18 +22,21 @@ import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.Mobil
 
 class ReflectionPage : ComponentActivity() {
 
+    //Variables created
     private lateinit var button: Button
     private lateinit var imageView: ImageView
 
+    //Creating request code for image
     companion object{
         val IMAGE_REQUEST_CODE = 100
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.expand_on_feelings_page)
+        setContentView(R.layout.reflection_page)
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
 
-        val editText = findViewById<EditText>(R.id.enterName)
+        //Creating variables for the buttons and text box
+        val editText = findViewById<EditText>(R.id.reflectionPageTextbox)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
         val okayButton = findViewById<Button>(R.id.okayButton)
@@ -43,16 +46,19 @@ class ReflectionPage : ComponentActivity() {
         button = findViewById(R.id.btn_pick_img)
         imageView = findViewById(R.id.img_save)
 
+        //Set up function for button to choose from image Library
         button.setOnClickListener {
             pickImageGallery()
         }
 
 
-        //BG background
+        //Change background based on what button is selected
         val bgcolorsaved = bgValue.bgColourChange
+
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
+        //Set up buttons to change the background of the page
         awfulButton.setOnClickListener {
             bgValue.bgColourChange = "#4C2899"
             colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
@@ -76,12 +82,14 @@ class ReflectionPage : ComponentActivity() {
 
         Log.d("expand", "color check: $bgcolorsaved")
 
+        //Creating button to save and go to the homepage
         val goToHomePage = findViewById<Button>(R.id.saveButton)
         goToHomePage.setOnClickListener {
             val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
         }
 
+        //Creating button to cancel and go to the homepage
         val goToHomePage2 = findViewById<Button>(R.id.cancelButton)
         goToHomePage2.setOnClickListener {
             val intent = Intent(this, HomePage::class.java)
@@ -89,12 +97,14 @@ class ReflectionPage : ComponentActivity() {
         }
     }
 
+    //function to select image from users phone
     private fun pickImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
         startActivityForResult(intent, IMAGE_REQUEST_CODE)
     }
 
+    //function for requesting image and displaying in the page
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == IMAGE_REQUEST_CODE && resultCode == RESULT_OK ){
