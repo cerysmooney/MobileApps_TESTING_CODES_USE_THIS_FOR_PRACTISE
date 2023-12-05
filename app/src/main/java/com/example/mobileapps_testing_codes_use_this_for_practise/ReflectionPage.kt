@@ -22,6 +22,7 @@ class ReflectionPage : ComponentActivity() {
         const val IMAGE_REQUEST_CODE = 100
     }
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.reflection_page)
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
