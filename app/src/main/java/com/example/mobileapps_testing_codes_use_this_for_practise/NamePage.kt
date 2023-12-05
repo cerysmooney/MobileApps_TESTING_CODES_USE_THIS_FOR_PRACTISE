@@ -21,6 +21,7 @@ class NamePage : ComponentActivity() {
         super.onCreate(savedInstanceState)
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
         setContentView(R.layout.name_page)
+
         //val bgcolorsaved = intent.getStringExtra("saveBackground")
         val bgcolorsaved = bgValue.bgColourChange
         val editText = findViewById<EditText>(R.id.enterName)
@@ -43,6 +44,7 @@ class NamePage : ComponentActivity() {
             Log.d("NamePage", "setName: $setName")
             //val name = editText.text.toString()
             //Log.d("NamePage", "name:$name")
+
             val Intent = Intent(this, HomePage::class.java).also{
                 //it.putExtra("textSave",name)
                 startActivity(it)
