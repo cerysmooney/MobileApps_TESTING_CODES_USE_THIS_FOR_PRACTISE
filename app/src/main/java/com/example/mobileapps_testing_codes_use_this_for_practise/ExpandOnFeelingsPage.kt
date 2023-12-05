@@ -30,10 +30,10 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.expand_on_feelings_page)
+        setContentView(R.layout.reflection_page)
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
 
-        val editText = findViewById<EditText>(R.id.enterName)
+        val editText = findViewById<EditText>(R.id.reflectionPageTextbox)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
         val okayButton = findViewById<Button>(R.id.okayButton)
