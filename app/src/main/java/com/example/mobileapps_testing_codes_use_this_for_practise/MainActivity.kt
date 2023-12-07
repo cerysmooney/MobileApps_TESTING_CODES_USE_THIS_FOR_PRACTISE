@@ -39,6 +39,7 @@ class MainActivity : ComponentActivity() {
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
+                Log.d("mainactivity", "seek value: $progress")
                 when {
                     progress <= 0 -> text.text = "AWFUL"
                     progress <= 1 -> text.text = "SAD"
