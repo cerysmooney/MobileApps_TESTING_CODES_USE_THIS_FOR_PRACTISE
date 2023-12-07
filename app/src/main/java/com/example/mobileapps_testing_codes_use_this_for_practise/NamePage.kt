@@ -60,5 +60,13 @@ class NamePage : ComponentActivity() {
                 startActivity(it)
             }
         }
+
+        val skipHome = findViewById<Button>(R.id.skipToHomeButton)
+        skipHome.setOnClickListener {
+            Intent(this, HomePage::class.java).also {
+                //it.putExtra("textSave",name)
+                startActivity(it)
+            }
+        }
     }
 }
