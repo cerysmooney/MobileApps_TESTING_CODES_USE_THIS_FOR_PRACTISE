@@ -44,7 +44,7 @@
         android:layout_marginTop="634dp"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="11dp"
-        android:background="@drawable/rounded_textbox" />
+        android:background="@drawable/only_top_rounded_textbox" />
 
     <ImageButton
         android:id="@+id/reflectionPageButton"
