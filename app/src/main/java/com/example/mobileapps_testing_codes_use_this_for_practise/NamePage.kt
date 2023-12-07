@@ -49,6 +49,17 @@ class NamePage : ComponentActivity() {
                 //it.putExtra("textSave",name)
                 startActivity(it)
             }
+            val emotionPageButton = findViewById<Button>(R.id.emotionButton)
+            emotionPageButton.setOnClickListener {
+                //  Log.d("NamePage", "setName: $setName")
+                //val name = editText.text.toString()
+                //Log.d("NamePage", "name:$name")
+
+               val intent = Intent(this, MainActivity::class.java).also {
+                    //it.putExtra("textSave",name)
+                    startActivity(it)
+                }
+            }
 
         }
     }
