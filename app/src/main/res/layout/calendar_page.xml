@@ -30,24 +30,9 @@
         android:layout_marginTop="30dp"
         android:forceDarkAllowed="false"
         android:scaleY="1"
-        android:selectedWeekBackgroundColor="#ffffff"
         android:onClick="onDateClick"/>
 
-    <FrameLayout
-        android:id="@+id/circleContainer"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_centerInParent="true"
-        >
-        <View
-            android:id="@+id/selectedDateCircle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@drawable/transparent_white_box"
-            android:visibility="invisible"
-            />
-    </FrameLayout>
+
 
 
 </RelativeLayout>
