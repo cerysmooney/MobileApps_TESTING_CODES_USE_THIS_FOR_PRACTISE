@@ -37,24 +37,24 @@ class HomePage : ComponentActivity() {
         textView.text = currentDateAndTime
 
         //Calling values for the image buttons to allow for changing background
-//        val imageCross = findViewById<ImageButton>(R.id.imageCross)
-//        val imageCross2 = findViewById<ImageButton>(R.id.imageCross2)
-//        val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
-//        val imageCross4 = findViewById<ImageButton>(R.id.goalsPageButton)
+        val imageCross = findViewById<ImageButton>(R.id.imageCross)
+        val imageCross2 = findViewById<ImageButton>(R.id.imageCross2)
+        val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
+        val imageCross4 = findViewById<ImageButton>(R.id.goalsPageButton)
 
         //Changing the background on click for each button
-//        imageCross.setOnClickListener{
-//            imageCross.setBackgroundResource(R.drawable.check)
-//        }
-//        imageCross2.setOnClickListener{
-//            imageCross2.setBackgroundResource(R.drawable.check)
-//        }
-//        imageCross3.setOnClickListener{
-//            imageCross3.setBackgroundResource(R.drawable.check)
-//        }
-//        imageCross4.setOnClickListener{
-//            imageCross4.setBackgroundResource(R.drawable.check)
-//        }
+        imageCross.setOnClickListener{
+            imageCross.setBackgroundResource(R.drawable.check)
+        }
+        imageCross2.setOnClickListener{
+            imageCross2.setBackgroundResource(R.drawable.check)
+        }
+        imageCross3.setOnClickListener{
+            imageCross3.setBackgroundResource(R.drawable.check)
+        }
+        imageCross4.setOnClickListener{
+            imageCross4.setBackgroundResource(R.drawable.check)
+        }
 
         //Displaying hello and the name chosen from the name page
         //val name = intent.getStringExtra("textSave")
