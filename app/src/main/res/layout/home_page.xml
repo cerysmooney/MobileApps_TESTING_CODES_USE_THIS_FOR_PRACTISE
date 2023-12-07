@@ -67,17 +67,145 @@
             app:layout_constraintTop_toTopOf="@+id/textView4"
             />
 
+
         <ImageButton
             android:id="@+id/reflectionPageButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="312dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginTop="452dp"
+            android:layout_marginEnd="4dp"
             android:background="@drawable/plusicon"
             android:elevation="10dp"
             android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="@+id/textView4"
             app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="412dp"
+            android:layout_height="384dp"
+            android:background="@drawable/transparent_white_box"
+            android:elevation="10dp"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/imageCross"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cross"
+            android:elevation="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.572" />
+
+        <ImageButton
+            android:id="@+id/imageCross2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cross"
+            android:elevation="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.657" />
+
+        <ImageButton
+            android:id="@+id/imageCross3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cross"
+            android:elevation="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.743" />
+
+
+        <ImageButton
+            android:id="@+id/goalsPageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/go"
+            android:elevation="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.829" />
+
+        <TextView
+            android:id="@+id/goalsPageGoal1"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/transparent_white_box"
+            android:elevation="10dp"
+            android:text="  Make Your Bed"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageCross"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageCross"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/goalsPageGoal2"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/transparent_white_box"
+            android:elevation="10dp"
+            android:text="  Message A Friend"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageCross"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageCross"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/goalsPageGoal3"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/transparent_white_box"
+            android:elevation="10dp"
+            android:text="  Brush Your Teeth"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageCross"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageCross"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <TextView
+            android:id="@+id/goalsPageAddYourOwn"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/transparent_white_box"
+            android:elevation="10dp"
+            android:text="  Add Your Own..."
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageCross"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageCross"
+            app:layout_constraintVertical_bias="0.6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

@@ -32,8 +32,10 @@ class MainActivity : ComponentActivity() {
         val colorBG = findViewById<ConstraintLayout>(R.id.BGColor)
 
         //var backgroundColor = bgValue.bgColourChange
-        var backgroundColor = "88BB22"
+        var backgroundColor = "#F49B55"
         bgValue.bgColourChange = backgroundColor
+
+//        Log.d("mainactivity", "color check: $backgroundColor")
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
