@@ -55,7 +55,7 @@ class NamePage : ComponentActivity() {
             //  Log.d("NamePage", "setName: $setName")
             //val name = editText.text.toString()
             //Log.d("NamePage", "name:$name")
-            val intent = Intent(this, MainActivity::class.java).also {
+          Intent(this, MainActivity::class.java).also {
                 //it.putExtra("textSave",name)
                 startActivity(it)
             }
