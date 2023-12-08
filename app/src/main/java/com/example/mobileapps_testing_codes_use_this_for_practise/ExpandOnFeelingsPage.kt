@@ -23,6 +23,8 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         setContentView(R.layout.expand_on_feelings_page)
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.fade_in, R.anim.fade_out)
 
+        //
+
         findViewById<EditText>(R.id.enterName)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
