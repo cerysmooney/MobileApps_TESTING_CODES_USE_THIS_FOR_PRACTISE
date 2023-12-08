@@ -3,12 +3,15 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.transition.Transition
+import android.transition.TransitionInflater
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class ExpandOnFeelingsPage : ComponentActivity() {
 
@@ -20,8 +23,11 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val fade:Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
+        window.enterTransition = fade
+        //overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.fade_in, R.anim.fade_out)
         setContentView(R.layout.expand_on_feelings_page)
-        overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.fade_in, R.anim.fade_out)
+
 
         //
 
