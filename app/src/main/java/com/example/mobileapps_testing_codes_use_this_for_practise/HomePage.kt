@@ -91,12 +91,13 @@ class HomePage : ComponentActivity() {
         }
         //
 
-        val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
-        window.exitTransition = fade
+
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener {
-
+//            val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
+//            fade.duration = 5000
+//            window.exitTransition = fade
             val intent = Intent(this, ExpandOnFeelingsPage::class.java)
             startActivity(intent)
         }

@@ -3,6 +3,8 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.transition.Transition
+import android.transition.TransitionInflater
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -20,8 +22,11 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
+//        fade.duration = 5000
+//        window.enterTransition = fade
         setContentView(R.layout.expand_on_feelings_page)
-        overrideActivityTransition( OVERRIDE_TRANSITION_CLOSE, R.anim.fade_out, R.anim.fade_in)
+        //overrideActivityTransition( OVERRIDE_TRANSITION_CLOSE, R.anim.fade_out, R.anim.fade_in)
 
         //
 
