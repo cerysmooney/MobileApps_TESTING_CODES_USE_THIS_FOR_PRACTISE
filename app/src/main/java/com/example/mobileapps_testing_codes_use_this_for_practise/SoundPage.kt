@@ -34,47 +34,4 @@ class SoundPage : ComponentActivity() {
     }
 }
 
-//
-//        setContent {
-//            com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme {
-//                // A surface container using the 'background' color from the theme
-//                Surface(
-//                    modifier = Modifier.fillMaxSize(),
-//                    color = MaterialTheme.colorScheme.background
-//                ) {
-//                    Greeting("Android")
-//                }
-//            }
-//        }
-//
-//
-//
-//        setContent {
-//            MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme {
-//                // A surface container using the 'background' color from the theme
-//                Surface(
-//                    modifier = Modifier.fillMaxSize(),
-//                    color = MaterialTheme.colorScheme.background
-//                ) {
-//                    Greeting("Android")
-//                }
-//            }
-//        }
-//    }
-//}
 
-//@Composable
-//fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme {
-//        Greeting("Android")
-//    }
-//}
