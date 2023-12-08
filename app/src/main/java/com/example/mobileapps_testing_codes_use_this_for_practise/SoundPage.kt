@@ -48,7 +48,7 @@ class SoundPage : ComponentActivity() {
                 }
             }
 
-            val mediaPlayer = MediaPlayer.create(this, R.raw.birds)
+            val mediaPlayer = MediaPlayer.create(this, R.raw.happy_noise)
 
             currentMediaPlayer = mediaPlayer
 
