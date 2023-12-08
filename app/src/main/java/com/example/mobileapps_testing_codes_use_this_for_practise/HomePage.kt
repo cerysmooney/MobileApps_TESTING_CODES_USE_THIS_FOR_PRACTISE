@@ -89,8 +89,6 @@ class HomePage : ComponentActivity() {
             val intent = Intent(this, ExpandOnFeelingsPage::class.java)
             startActivity(intent)
         }
-
-
     }
 }
 
