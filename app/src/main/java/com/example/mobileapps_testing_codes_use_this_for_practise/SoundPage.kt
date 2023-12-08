@@ -25,8 +25,6 @@ class SoundPage : ComponentActivity() {
 
         // Initialize MediaPlayer
 
-
-
         val playButton = findViewById<ImageButton>(R.id.playSound)
 
         playButton.setOnClickListener {
