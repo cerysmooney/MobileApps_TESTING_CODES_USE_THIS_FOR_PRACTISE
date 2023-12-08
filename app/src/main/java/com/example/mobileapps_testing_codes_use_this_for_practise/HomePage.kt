@@ -4,7 +4,10 @@ import android.content.Intent
 
 import android.graphics.Color
 import android.os.Bundle
+import android.transition.Transition
+import android.transition.TransitionInflater
 import android.util.Log
+import android.view.Window
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.ComponentActivity
@@ -18,6 +21,7 @@ class HomePage : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
         overrideActivityTransition(
             OVERRIDE_TRANSITION_OPEN,
             R.anim.slide_in_right,
@@ -75,9 +79,7 @@ class HomePage : ComponentActivity() {
         //Button for getting to calendar page
         val homeCalendarPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
         homeCalendarPageButton.setOnClickListener {
-            val Intent = Intent(this, CalendarPage::class.java).also{
-                overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.fade_in, R.anim.fade_out)
-            }
+            val Intent = Intent(this, CalendarPage::class.java)
             startActivity(Intent)
         }
 
@@ -89,10 +91,13 @@ class HomePage : ComponentActivity() {
         }
         //
 
+
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener {
-
+//            val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
+//            fade.duration = 5000
+//            window.exitTransition = fade
             val intent = Intent(this, ExpandOnFeelingsPage::class.java)
             startActivity(intent)
         }
