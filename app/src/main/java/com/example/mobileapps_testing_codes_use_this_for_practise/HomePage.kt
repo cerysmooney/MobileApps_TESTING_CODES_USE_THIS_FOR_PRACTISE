@@ -75,7 +75,9 @@ class HomePage : ComponentActivity() {
         //Button for getting to calendar page
         val homeCalendarPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
         homeCalendarPageButton.setOnClickListener {
-            val Intent = Intent(this, CalendarPage::class.java)
+            val Intent = Intent(this, CalendarPage::class.java).also{
+                overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.fade_in, R.anim.fade_out)
+            }
             startActivity(Intent)
         }
 
