@@ -211,8 +211,8 @@
 
         <ImageButton
             android:id="@+id/reflectionPageButton"
-            android:layout_width="75dp"
-            android:layout_height="70dp"
+            android:layout_width="67dp"
+            android:layout_height="58dp"
             android:background="@drawable/baseline_calendar_today_24"
             android:elevation="10dp"
             android:scaleType="centerInside"
@@ -236,8 +236,8 @@
 
         <ImageButton
             android:id="@+id/reflectionPageButton3"
-            android:layout_width="83dp"
-            android:layout_height="77dp"
+            android:layout_width="79dp"
+            android:layout_height="69dp"
             android:background="@drawable/baseline_checklist_rtl_24"
             android:elevation="10dp"
             android:scaleType="centerInside"
