@@ -2,11 +2,9 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.CalendarView
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
-import android.widget.FrameLayout
-import android.widget.Toast
 
 
 
@@ -20,7 +18,17 @@ class CalendarPage : ComponentActivity() {
 
 
 
+        val homeGoalsPageButton = findViewById<ImageButton>(R.id.reflectionPageButton3)
+        homeGoalsPageButton.setOnClickListener {
+            val Intent = Intent(this,GoalsPage::class.java)
+            startActivity(Intent)
+        }
 
+        val homeHomePageButton = findViewById<ImageButton>(R.id.reflectionPageButton2)
+        homeGoalsPageButton.setOnClickListener {
+            val Intent = Intent(this,GoalsPage::class.java)
+            startActivity(Intent)
+        }
 
 
 

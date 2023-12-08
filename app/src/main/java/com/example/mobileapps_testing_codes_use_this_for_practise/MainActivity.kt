@@ -85,11 +85,19 @@ class MainActivity : ComponentActivity() {
 
 //                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_left)
             }
+
+
 //            val intent = Intent(this, HomePage::class.java ).also {
 //                it.putExtra("saveBG", backgroundColor)
 
 
         }
 
+        val skipNamePageBttn = findViewById<Button>(R.id.skipButton)
+        skipNamePageBttn.setOnClickListener {
+            Intent(this, NamePage::class.java).also{
+                startActivity(it)
+            }
+        }
     }
 }

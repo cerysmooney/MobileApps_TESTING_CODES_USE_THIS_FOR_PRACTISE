@@ -43,16 +43,16 @@ class HomePage : ComponentActivity() {
         val imageCross4 = findViewById<ImageButton>(R.id.goalsPageButton)
 
         //Changing the background on click for each button
-        imageCross.setOnClickListener{
+        imageCross.setOnClickListener {
             imageCross.setBackgroundResource(R.drawable.check)
         }
-        imageCross2.setOnClickListener{
+        imageCross2.setOnClickListener {
             imageCross2.setBackgroundResource(R.drawable.check)
         }
-        imageCross3.setOnClickListener{
+        imageCross3.setOnClickListener {
             imageCross3.setBackgroundResource(R.drawable.check)
         }
-        imageCross4.setOnClickListener{
+        imageCross4.setOnClickListener {
             imageCross4.setBackgroundResource(R.drawable.check)
         }
 
@@ -67,12 +67,20 @@ class HomePage : ComponentActivity() {
 
         //Log.d("HomePage","name: $callName")
 
-        //Button for getting to goals page
-        val homeGoalsPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
-        homeGoalsPageButton.setOnClickListener{
-            val Intent = Intent(this,CalendarPage::class.java)
+        //Button for getting to calendar page
+        val homeCalendarPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
+        homeCalendarPageButton.setOnClickListener {
+            val Intent = Intent(this, CalendarPage::class.java)
             startActivity(Intent)
         }
+
+        // Button for getting goals page
+        val homeGoalsPageButton = findViewById<ImageButton>(R.id.reflectionPageButton3)
+        homeGoalsPageButton.setOnClickListener {
+            val Intent = Intent(this,GoalsPage::class.java)
+            startActivity(Intent)
+        }
+        //
 
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
@@ -81,8 +89,6 @@ class HomePage : ComponentActivity() {
             val intent = Intent(this, ExpandOnFeelingsPage::class.java)
             startActivity(intent)
         }
-
-
     }
 }
 
