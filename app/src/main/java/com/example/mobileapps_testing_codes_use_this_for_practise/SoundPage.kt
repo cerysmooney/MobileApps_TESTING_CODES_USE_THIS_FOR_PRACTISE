@@ -6,16 +6,7 @@ import android.os.Bundle
 import android.view.Window
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme
 
 class SoundPage : ComponentActivity() {
 
@@ -42,42 +33,65 @@ class SoundPage : ComponentActivity() {
 
 
 
+        var currentMediaPlayer: MediaPlayer? = null
+
         // Initialize MediaPlayer Happy
         val playButtonHappy = findViewById<ImageButton>(R.id.playSoundHappy)
 
         playButtonHappy.setOnClickListener {
 
+            // val mediaPlayer = MediaPlayer.create(this, R.raw.birds)
+
+            currentMediaPlayer?.let{
+                if(it.isPlaying) {
+                    it.stop()
+                }
+            }
+
             val mediaPlayer = MediaPlayer.create(this, R.raw.birds)
 
-            // Check if the audio is playing
-            if (mediaPlayer.isPlaying) {
-                // If playing, pause and update button text
-                mediaPlayer.stop()
-//                playButton.text = "Play Audio"
-            } else {
-                // If not playing, start playing and update button text
-                mediaPlayer.start()
-//                playButton.text = "Pause Audio"
-            }
+            currentMediaPlayer = mediaPlayer
+
+            mediaPlayer.start()
+
+//            // Check if the audio is playing
+//            if (mediaPlayer.isPlaying) {
+//                // If playing, pause and update button text
+//                mediaPlayer.stop()
+////                playButton.text = "Play Audio"
+//            } else {
+//                // If not playing, start playing and update button text
+//                mediaPlayer.start()
+////                playButton.text = "Pause Audio"
+//            }
         }
+
 
         // Initialize MediaPlayer Okay
         val playButtonOkay = findViewById<ImageButton>(R.id.playSoundOkay)
 
         playButtonOkay.setOnClickListener {
 
-            val mediaPlayer = MediaPlayer.create(this, R.raw.birds)
+//            val mediaPlayer = MediaPlayer.create(this, R.raw.okay_noise)
+                currentMediaPlayer?.let {
+                    if(it.isPlaying) {
+                        it.stop()
+                    }
+                }
+            val mediaPlayer = MediaPlayer.create(this, R.raw.okay_noise)
+            currentMediaPlayer = mediaPlayer
+            mediaPlayer.start()
 
-            // Check if the audio is playing
-            if (mediaPlayer.isPlaying) {
-                // If playing, pause and update button text
-                mediaPlayer.stop()
-//                playButton.text = "Play Audio"
-            } else {
-                // If not playing, start playing and update button text
-                mediaPlayer.start()
-//                playButton.text = "Pause Audio"
-            }
+//            // Check if the audio is playing
+//            if (mediaPlayer.isPlaying) {
+//                // If playing, pause and update button text
+//                mediaPlayer.stop()
+////                playButton.text = "Play Audio"
+//            } else {
+//                // If not playing, start playing and update button text
+//                mediaPlayer.start()
+////                playButton.text = "Pause Audio"
+//            }
         }
 
         // Initialize MediaPlayer Awful
@@ -85,19 +99,30 @@ class SoundPage : ComponentActivity() {
 
         playButtonSad.setOnClickListener {
 
-            val mediaPlayer = MediaPlayer.create(this, R.raw.birds)
+//            val mediaPlayer = MediaPlayer.create(this, R.raw.anxious_noise)
 
-            // Check if the audio is playing
-            if (mediaPlayer.isPlaying) {
-                // If playing, pause and update button text
-                mediaPlayer.stop()
-//                playButton.text = "Play Audio"
-            } else {
-                // If not playing, start playing and update button text
-                mediaPlayer.start()
-//                playButton.text = "Pause Audio"
+            currentMediaPlayer?.let {
+                if (it.isPlaying) {
+                    it.stop()
+                }
             }
+
+            val mediaPlayer = MediaPlayer.create(this, R.raw.anxious_noise)
+            currentMediaPlayer = mediaPlayer
+            mediaPlayer.start()
+
         }
+//            // Check if the audio is playing
+//            if (mediaPlayer.isPlaying) {
+//                // If playing, pause and update button text
+//                mediaPlayer.stop()
+////                playButton.text = "Play Audio"
+//            } else {
+//                // If not playing, start playing and update button text
+//                mediaPlayer.start()
+////                playButton.text = "Pause Audio"
+//            }
+//        }
     }
 
     override fun onDestroy() {
