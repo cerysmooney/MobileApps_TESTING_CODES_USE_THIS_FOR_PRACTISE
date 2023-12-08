@@ -6,17 +6,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/owl_head"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/owl_head_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE"
         tools:targetApi="31">
         <activity
-            android:name=".ui.theme.SoundPage"
+            android:name=".SoundPage"
             android:exported="false"
             android:label="@string/title_activity_sound_page"
             android:theme="@style/Theme.MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISE" />
+
         <activity
             android:name=".ReflectionPage"
             android:exported="false"

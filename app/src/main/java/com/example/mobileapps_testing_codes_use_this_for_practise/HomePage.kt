@@ -52,8 +52,13 @@ class HomePage : ComponentActivity() {
         imageCross3.setOnClickListener {
             imageCross3.setBackgroundResource(R.drawable.check)
         }
-        imageCross4.setOnClickListener {
-            imageCross4.setBackgroundResource(R.drawable.check)
+
+
+        // Button for getting goals page
+        val goalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
+        goalsPageButton.setOnClickListener {
+            val Intent = Intent(this, SoundPage::class.java)
+            startActivity(Intent)
         }
 
         //Displaying hello and the name chosen from the name page
