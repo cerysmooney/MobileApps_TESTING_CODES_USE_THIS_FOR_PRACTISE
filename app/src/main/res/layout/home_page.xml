@@ -225,9 +225,9 @@
 
         <ImageButton
             android:id="@+id/reflectionPageButton2"
-            android:layout_width="83dp"
-            android:layout_height="77dp"
-            android:background="@drawable/baseline_home_24"
+            android:layout_width="77dp"
+            android:layout_height="61dp"
+            android:background="@drawable/owlhead"
             android:elevation="10dp"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="@+id/textView6"
