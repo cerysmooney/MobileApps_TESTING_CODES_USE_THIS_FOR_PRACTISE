@@ -21,7 +21,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.expand_on_feelings_page)
-        overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.fade_in, R.anim.fade_out)
+        overrideActivityTransition( OVERRIDE_TRANSITION_CLOSE, R.anim.fade_in, R.anim.fade_out)
 
         //
 
