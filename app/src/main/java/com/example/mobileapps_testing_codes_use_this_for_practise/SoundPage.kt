@@ -2,6 +2,7 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,22 +17,36 @@ import com.example.mobileapps_testing_codes_use_this_for_practise.ui.theme.Mobil
 class SoundPage : ComponentActivity() {
 
 
+    private lateinit var mediaPlayer: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sound_page)
 
+        // Initialize MediaPlayer
+        mediaPlayer = MediaPlayer.create(this, R.raw.birds)
 
-        var mMediaPlayer: MediaPlayer? = null
 
-        // 1. Plays the water sound
-        fun playSound() {
-            if (mMediaPlayer == null) {
-                mMediaPlayer = MediaPlayer.create(this, R.raw.birds)
-                mMediaPlayer!!.isLooping = true
-                mMediaPlayer!!.start()
-            } else mMediaPlayer!!.start()
+        val playButton = findViewById<ImageButton>(R.id.playSound)
+
+        playButton.setOnClickListener {
+            // Check if the audio is playing
+            if (mediaPlayer.isPlaying) {
+                // If playing, pause and update button text
+                mediaPlayer.pause()
+//                playButton.text = "Play Audio"
+            } else {
+                // If not playing, start playing and update button text
+                mediaPlayer.start()
+//                playButton.text = "Pause Audio"
+            }
         }
     }
-}
 
+    override fun onDestroy() {
+        super.onDestroy()
+        // Release the MediaPlayer when the activity is destroyed
+        mediaPlayer.release()
+    }
+}
 
