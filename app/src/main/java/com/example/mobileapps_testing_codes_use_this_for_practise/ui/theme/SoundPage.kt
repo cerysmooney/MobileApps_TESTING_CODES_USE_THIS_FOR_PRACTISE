@@ -28,7 +28,7 @@ class SoundPage : ComponentActivity() {
         // 1. Plays the water sound
         fun playSound() {
             if (mMediaPlayer == null) {
-                mMediaPlayer = MediaPlayer.create(this, R.raw.water)
+                mMediaPlayer = MediaPlayer.create(this, R.raw.birds)
                 mMediaPlayer!!.isLooping = true
                 mMediaPlayer!!.start()
             } else mMediaPlayer!!.start()
@@ -49,13 +49,13 @@ class SoundPage : ComponentActivity() {
         }
 
         // 4. Destroys the MediaPlayer instance when the app is closed
-        override fun onStop() {
-            super.onStop()
-            if (mMediaPlayer != null) {
-                mMediaPlayer!!.release()
-                mMediaPlayer = null
-            }
-        }
+//        fun onStop() {
+//            super.onStop()
+//            if (mMediaPlayer != null) {
+//                mMediaPlayer!!.release()
+//                mMediaPlayer = null
+//            }
+//        }
 
         setContent {
             MobileApps_TESTING_CODES_USE_THIS_FOR_PRACTISETheme {
