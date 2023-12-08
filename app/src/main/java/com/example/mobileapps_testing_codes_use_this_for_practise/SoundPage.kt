@@ -24,12 +24,15 @@ class SoundPage : ComponentActivity() {
         setContentView(R.layout.sound_page)
 
         // Initialize MediaPlayer
-        mediaPlayer = MediaPlayer.create(this, R.raw.birds)
+
 
 
         val playButton = findViewById<ImageButton>(R.id.playSound)
 
         playButton.setOnClickListener {
+
+            val mediaPlayer = MediaPlayer.create(this, R.raw.birds)
+
             // Check if the audio is playing
             if (mediaPlayer.isPlaying) {
                 // If playing, pause and update button text
