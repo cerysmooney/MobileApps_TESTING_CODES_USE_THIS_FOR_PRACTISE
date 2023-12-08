@@ -7,24 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".SoundPage">
 
-    <ImageView
-        android:id="@+id/playSound"
-        android:layout_width="136dp"
-        android:layout_height="92dp"
-        android:onClick="playSound"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384"
-        app:src = "@drawable/owl_okay" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="214dp"
         android:layout_height="72dp"
-        android:text="SIUNDSSSSSSS"
+        android:text="SoUNDSSSSSSS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
