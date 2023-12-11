@@ -88,7 +88,6 @@ class HomePage : ComponentActivity() {
             val Intent = Intent(this,GoalsPage::class.java)
             startActivity(Intent)
         }
-        //
 
 
         //Button for Expanding on Feelings

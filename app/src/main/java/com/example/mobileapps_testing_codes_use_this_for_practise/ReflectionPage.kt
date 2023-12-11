@@ -24,7 +24,11 @@ class ReflectionPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
+
+        //Connect to xml layout
         setContentView(R.layout.reflection_page)
+
+        //Set up transition
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
 
         //Creating variables for the buttons and text box
@@ -35,6 +39,7 @@ class ReflectionPage : ComponentActivity() {
         val happyButton = findViewById<Button>(R.id.happyButton)
         val awesomeButton = findViewById<Button>(R.id.awesomeButton)
 
+        //setting up buttons for choosing an image
         button = findViewById(R.id.btn_pick_img)
         imageView = findViewById(R.id.img_save)
 

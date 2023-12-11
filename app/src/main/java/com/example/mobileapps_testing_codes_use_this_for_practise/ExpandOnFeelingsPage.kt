@@ -25,11 +25,13 @@ class ExpandOnFeelingsPage : ComponentActivity() {
 //        val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
 //        fade.duration = 5000
 //        window.enterTransition = fade
+
+        //Connecting to xml layout
         setContentView(R.layout.expand_on_feelings_page)
-        //overrideActivityTransition( OVERRIDE_TRANSITION_CLOSE, R.anim.fade_out, R.anim.fade_in)
 
-        //
+//      overrideActivityTransition( OVERRIDE_TRANSITION_CLOSE, R.anim.fade_out, R.anim.fade_in)
 
+        //Setting up Variables for buttons
         findViewById<EditText>(R.id.enterName)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
@@ -37,13 +39,14 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         val happyButton = findViewById<Button>(R.id.happyButton)
         val awesomeButton = findViewById<Button>(R.id.awesomeButton)
 
+        //Setting up image button
         button = findViewById(R.id.btn_pick_img)
         imageView = findViewById(R.id.img_save)
 
+        //Being able to choose image
         button.setOnClickListener {
             pickImageGallery()
         }
-
 
         //BG background
         val bgcolorsaved = bgValue.bgColourChange
@@ -72,14 +75,17 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
         }
 
+        //change the background colour on log for across the app
         Log.d("expand", "color check: $bgcolorsaved")
 
+        //Save button goes to home page
         val goToHomePage = findViewById<Button>(R.id.saveButton)
         goToHomePage.setOnClickListener {
            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
         }
 
+        //Cancel button goes to home page
         val goToHomePage2 = findViewById<Button>(R.id.cancelButton)
         goToHomePage2.setOnClickListener {
            val intent = Intent(this, HomePage::class.java)
