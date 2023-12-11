@@ -12,7 +12,7 @@
         android:layout_width="371dp"
         android:layout_height="79dp"
         android:text="Need to Relax?"
-        android:textSize="50sp"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
@@ -25,13 +25,15 @@
         android:layout_width="371dp"
         android:layout_height="79dp"
         android:text="Here's some sounds we think you'll enjoy!"
-        android:textSize="30sp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.199" />
+
+<!--Sound Buttons-->
 
     <ImageButton
         android:id="@+id/playSoundHappy"
@@ -44,6 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.381" />
+
 
     <ImageButton
         android:id="@+id/playSoundOkay"
@@ -70,20 +73,20 @@
         app:layout_constraintVertical_bias="0.38" />
 
 
+    <!--Owl Image-->
 
-
-    <TextView
-        android:id="@+id/body"
-        android:layout_width="191dp"
-        android:layout_height="169dp"
-        android:text="lorem ipsom"
-        android:textSize="20sp"
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="98dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_background_dark"
+        android:text="Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintVertical_bias="0.518" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -96,6 +99,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.848" />
+
+<!--Nav Bar-->
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="430dp"
+        android:layout_height="67dp"
+        android:background="@drawable/only_top_rounded_textbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/reflectionPageButton"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        android:background="@drawable/baseline_calendar_today_24"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageButton
+        android:id="@+id/reflectionPageButton2"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:background="@drawable/owlhead"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageButton
+        android:id="@+id/reflectionPageButton3"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:background="@drawable/baseline_checklist_rtl_24"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
