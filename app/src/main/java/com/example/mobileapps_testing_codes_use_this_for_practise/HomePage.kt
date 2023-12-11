@@ -1,11 +1,8 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
 import android.content.Intent
-
 import android.graphics.Color
 import android.os.Bundle
-import android.transition.Transition
-import android.transition.TransitionInflater
 import android.util.Log
 import android.view.Window
 import android.widget.ImageButton
@@ -79,9 +76,9 @@ class HomePage : ComponentActivity() {
         //Log.d("HomePage","name: $callName")
 
 //Button for getting to calendar page
-        val homeCalendarPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
-        homeCalendarPageButton.setOnClickListener {
-            val Intent = Intent(this, CalendarPage::class.java)
+        val homeSoundPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
+        homeSoundPageButton.setOnClickListener {
+            val Intent = Intent(this, SoundPage::class.java)
             startActivity(Intent)
         }
 

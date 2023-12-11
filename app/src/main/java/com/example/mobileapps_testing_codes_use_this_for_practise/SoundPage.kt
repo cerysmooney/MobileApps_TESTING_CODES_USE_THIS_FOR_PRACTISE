@@ -34,6 +34,7 @@ class SoundPage : ComponentActivity() {
         var currentMediaPlayer: MediaPlayer? = null
 
 //Initialize MediaPlayer Happy
+
         val playButtonHappy = findViewById<ImageButton>(R.id.playSoundHappy)
 
         playButtonHappy.setOnClickListener {
