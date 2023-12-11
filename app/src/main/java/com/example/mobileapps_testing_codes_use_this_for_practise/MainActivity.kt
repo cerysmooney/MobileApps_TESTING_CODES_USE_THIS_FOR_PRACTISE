@@ -41,8 +41,7 @@ class MainActivity : ComponentActivity() {
         var backgroundColor = "#F49B55"
         bgValue.bgColourChange = backgroundColor
 
-
-
+        //Setting up seekbar
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
                 Log.d("mainactivity", "seek value: $progress")
@@ -61,6 +60,7 @@ class MainActivity : ComponentActivity() {
                     else -> owlIMG.setImageResource(R.drawable.awesomeowl)
                 }
 
+                //Change background colour based on values
                 backgroundColor = when {
                     progress <= 0 -> "#4C2899"
                     progress <= 1 -> "#6A77F0"
@@ -69,36 +69,36 @@ class MainActivity : ComponentActivity() {
                     else -> "#4CB543"
                 }
                 colorBG.setBackgroundColor(Color.parseColor(backgroundColor))
-
             }
 
+            //Track mouse click moving the node on the seekbar
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
             }
-
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
             }
-        })
+        }
+        )
 
+        //Button for moving onto the next page
         val namePageButton = findViewById<Button>(R.id.button)
+
         namePageButton.setOnClickListener {
+
+            //Set variable to keep across onto next page
             bgValue.bgColourChange = backgroundColor
             val checkColor = bgValue.bgColourChange
+
+            //Button for moving onto next page
             Log.d("mainactivity", "color check: $checkColor")
             val Intent = Intent(this, NamePage::class.java ).also {
                 //it.putExtra("saveBackground", backgroundColor)
                 startActivity(it)
 
-
-//                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_left)
             }
-
-
-//            val intent = Intent(this, HomePage::class.java ).also {
-//                it.putExtra("saveBG", backgroundColor)
-
 
         }
 
+        //Skip Button to allow people to skip the decision
         val skipNamePageBttn = findViewById<Button>(R.id.skipButton)
         skipNamePageBttn.setOnClickListener {
             Intent(this, NamePage::class.java).also{

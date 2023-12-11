@@ -10,6 +10,7 @@ import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
+//Create global variable for saving the name
 class NameValue {
     companion object {
         var nameData: String = ""
@@ -19,6 +20,8 @@ class NameValue {
 class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Transition animation
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
         setContentView(R.layout.name_page)
 
@@ -27,13 +30,8 @@ class NamePage : ComponentActivity() {
         val editText = findViewById<EditText>(R.id.enterName)
         val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 
-       // Log.d(TAG, checkcolor)
 
-       checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
-
-//        if (bgcolorsaved != null) {
-//
-//        }
+        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
 
         val calendarPageButton = findViewById<Button>(R.id.nameButton)
