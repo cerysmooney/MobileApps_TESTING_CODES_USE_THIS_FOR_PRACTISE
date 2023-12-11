@@ -214,7 +214,7 @@
             android:id="@+id/reflectionPageButton"
             android:layout_width="67dp"
             android:layout_height="58dp"
-            android:background="@drawable/baseline_calendar_today_24"
+            android:background="@drawable/baseline_volume_up_24"
             android:elevation="10dp"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="@+id/textView6"
