@@ -50,6 +50,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
+        //Change background based on button
         awfulButton.setOnClickListener {
             bgValue.bgColourChange = "#4C2899"
             colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
