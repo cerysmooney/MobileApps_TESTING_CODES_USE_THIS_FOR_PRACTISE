@@ -99,6 +99,7 @@ class SoundPage : ComponentActivity() {
 
         }
 
+
         //Creating the Stop Button to stop playing the media player
         val stopButton = findViewById<Button>(R.id.stopButton)
 
