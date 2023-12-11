@@ -23,19 +23,25 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Splash Screen
         Thread.sleep(1000)
         installSplashScreen()
+
+        //Linked with xml
         setContentView(R.layout.my_layout)
+
+        //Setting Variables
         val seek = findViewById<SeekBar>(R.id.seekBar2)
         val text = findViewById<TextView>(R.id.emotions)
         val owlIMG = findViewById<ImageView>(R.id.owl_images)
         val colorBG = findViewById<ConstraintLayout>(R.id.BGColor)
 
-        //var backgroundColor = bgValue.bgColourChange
+        //Setting up variables for background changing
         var backgroundColor = "#F49B55"
         bgValue.bgColourChange = backgroundColor
 
-//        Log.d("mainactivity", "color check: $backgroundColor")
+
 
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
