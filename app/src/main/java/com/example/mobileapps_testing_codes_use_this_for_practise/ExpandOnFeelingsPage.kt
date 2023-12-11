@@ -3,8 +3,6 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.transition.Transition
-import android.transition.TransitionInflater
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -18,7 +16,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     private lateinit var imageView: ImageView
 
     companion object{
-        val IMAGE_REQUEST_CODE = 100
+        const val IMAGE_REQUEST_CODE = 100
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

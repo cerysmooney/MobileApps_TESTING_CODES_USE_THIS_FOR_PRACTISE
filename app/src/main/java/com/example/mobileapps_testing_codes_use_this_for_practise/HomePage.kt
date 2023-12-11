@@ -15,7 +15,7 @@ import java.util.Date
 
 
 class HomePage : ComponentActivity() {
-    @OptIn(ExperimentalMaterial3Api::class)
+    @OptIn(ExperimentalMaterial3Api::class)    // ask luke about
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -44,7 +44,7 @@ class HomePage : ComponentActivity() {
         val imageCross = findViewById<ImageButton>(R.id.imageCross)
         val imageCross2 = findViewById<ImageButton>(R.id.imageCross2)
         val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
-        val imageCross4 = findViewById<ImageButton>(R.id.goalsPageButton)
+//        val imageCross4 = findViewById<ImageButton>(R.id.goalsPageButton)
 
         //Changing the background on click for each button
         imageCross.setOnClickListener {
