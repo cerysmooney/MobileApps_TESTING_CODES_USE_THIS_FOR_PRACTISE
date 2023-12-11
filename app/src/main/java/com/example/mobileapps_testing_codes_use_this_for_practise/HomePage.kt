@@ -57,7 +57,6 @@ class HomePage : ComponentActivity() {
             imageCross3.setBackgroundResource(R.drawable.check)
         }
 
-
         // Button for getting goals page
         val goalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
         goalsPageButton.setOnClickListener {

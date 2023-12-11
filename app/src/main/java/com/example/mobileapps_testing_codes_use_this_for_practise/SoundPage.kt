@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.Window
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -112,6 +113,24 @@ class SoundPage : ComponentActivity() {
             mediaPlayer.start()
 
         }
+
+
+
+        val stopButton = findViewById<Button>(R.id.stopButton)
+
+        stopButton.setOnClickListener {
+
+//            val mediaPlayer = MediaPlayer.create(this, R.raw.anxious_noise)
+
+            currentMediaPlayer?.let {
+                if (it.isPlaying) {
+                    it.stop()
+                }
+            }
+
+
+        }
+
 //            // Check if the audio is playing
 //            if (mediaPlayer.isPlaying) {
 //                // If playing, pause and update button text
