@@ -11,9 +11,9 @@
         android:id="@+id/title"
         android:layout_width="371dp"
         android:layout_height="79dp"
-        android:text="Need to Relax?"
+        android:text="@string/need_to_relax"
         android:textColor="#FFFFFF"
-        android:textSize="50dp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
@@ -25,9 +25,9 @@
         android:id="@+id/header"
         android:layout_width="371dp"
         android:layout_height="79dp"
-        android:text="Here's some sounds we think you'll enjoy!"
+        android:text="@string/here_s_some_sounds_we_think_you_ll_enjoy"
         android:textColor="#FFFFFF"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
@@ -78,16 +78,16 @@
 
     <Button
         android:id="@+id/stopButton"
-        android:layout_width="98dp"
-        android:layout_height="46dp"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
         android:background="@drawable/button_background_dark"
-        android:text="Stop"
+        android:text="@string/stop_music"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.54" />
 
     <ImageButton
         android:id="@+id/imageButton"
