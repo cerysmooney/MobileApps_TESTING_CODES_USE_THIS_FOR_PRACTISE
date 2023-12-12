@@ -20,9 +20,6 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
-//        fade.duration = 5000
-//        window.enterTransition = fade
 
         //Connecting to xml layout
         setContentView(R.layout.expand_on_feelings_page)
