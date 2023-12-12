@@ -1,6 +1,8 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +17,17 @@ import java.util.Date
 
 
 class HomePage : ComponentActivity() {
+
+    private lateinit var sharedPreferences: SharedPreferences
+    private val CROSS1_KEY = "cross1_key"
+    private val CROSS2_KEY = "cross2_key"
+    private val CROSS3_KEY = "cross3_key"
+
+    // Declare boolean variables to track the state of each button
+    private var isCross1Checked = false
+    private var isCross2Checked = false
+    private var isCross3Checked = false
+
     @OptIn(ExperimentalMaterial3Api::class)    // ask luke about
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,43 +54,42 @@ class HomePage : ComponentActivity() {
         textView.text = currentDateAndTime
 
 
-        // Declare boolean variables to track the state of each button
-        var isCross1Checked = false
-        var isCross2Checked = false
-        var isCross3Checked = false
+        // Initialize SharedPreferences
+        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
 
-        //Calling values for the image buttons to allow for changing background
+        // Calling values for the image buttons to allow for changing background
         val imageCross = findViewById<ImageButton>(R.id.imageCross)
         val imageCross2 = findViewById<ImageButton>(R.id.imageCross2)
         val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
 
-        //Changing the background on click for each button
+        // Retrieve the saved state for each button
+        isCross1Checked = sharedPreferences.getBoolean(CROSS1_KEY, false)
+        isCross2Checked = sharedPreferences.getBoolean(CROSS2_KEY, false)
+        isCross3Checked = sharedPreferences.getBoolean(CROSS3_KEY, false)
+
+        // Set the initial background state for each button
+        updateButtonState(imageCross, isCross1Checked)
+        updateButtonState(imageCross2, isCross2Checked)
+        updateButtonState(imageCross3, isCross3Checked)
+
+        // Changing the background on click for each button
         imageCross.setOnClickListener {
             isCross1Checked = !isCross1Checked
-            if (isCross1Checked) {
-                imageCross.setBackgroundResource(R.drawable.check)
-            } else {
-                imageCross.setBackgroundResource(R.drawable.cross)
-            }
+            updateButtonState(imageCross, isCross1Checked)
+            saveState(CROSS1_KEY, isCross1Checked)
         }
 
         imageCross2.setOnClickListener {
             isCross2Checked = !isCross2Checked
-            if (isCross2Checked) {
-                imageCross2.setBackgroundResource(R.drawable.check)
-            } else {
-                imageCross2.setBackgroundResource(R.drawable.cross)
-            }
-        }
-        imageCross3.setOnClickListener {
-            isCross3Checked = !isCross3Checked
-            if (isCross3Checked) {
-                imageCross3.setBackgroundResource(R.drawable.check)
-            } else {
-                imageCross3.setBackgroundResource(R.drawable.cross)
-            }
+            updateButtonState(imageCross2, isCross2Checked)
+            saveState(CROSS2_KEY, isCross2Checked)
         }
 
+        imageCross3.setOnClickListener {
+            isCross3Checked = !isCross3Checked
+            updateButtonState(imageCross3, isCross3Checked)
+            saveState(CROSS3_KEY, isCross3Checked)
+        }
 
 
         // Button for getting goals page
@@ -99,8 +111,6 @@ class HomePage : ComponentActivity() {
         //Log.d("HomePage","name: $callName")
 
 
-
-
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener {
@@ -111,26 +121,40 @@ class HomePage : ComponentActivity() {
             startActivity(intent)
         }
 
-        
+
         //NAVIGATION BAR
 
         //Button for getting to the sounds page
         val homeSoundPageButton = findViewById<ImageButton>(R.id.soundPageButtonNav)
         homeSoundPageButton.setOnClickListener {
-            val soundPageScreen = Intent(this,SoundPage::class.java)
+            val soundPageScreen = Intent(this, SoundPage::class.java)
             startActivity(soundPageScreen)
         }
 
         // Button for getting goals page
         val homeGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButtonNav)
         homeGoalsPageButton.setOnClickListener {
-            val goalsPageScreen = Intent(this,GoalsPage::class.java)
+            val goalsPageScreen = Intent(this, GoalsPage::class.java)
             startActivity(goalsPageScreen)
         }
 
 
     }
-}
+
+    //Updating the function of the button
+    private fun updateButtonState(imageButton: ImageButton, isChecked: Boolean) {
+        if (isChecked) {
+            imageButton.setBackgroundResource(R.drawable.check)
+        } else {
+            imageButton.setBackgroundResource(R.drawable.cross)
+        }
+    }
+
+        private fun saveState(key: String, value: Boolean) {
+            sharedPreferences.edit().putBoolean(key, value).apply()
+        }
+    }
+
 
 
 
