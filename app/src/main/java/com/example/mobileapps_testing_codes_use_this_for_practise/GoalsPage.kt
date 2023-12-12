@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Window
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -46,6 +47,15 @@ class GoalsPage : ComponentActivity() {
                 startActivity(it)
             }
 
+
+        }
+
+        val backToHomeButton = findViewById<Button>(R.id.toHomeButton)
+        backToHomeButton.setOnClickListener {
+            val Intent = Intent(this, HomePage::class.java).also {
+                //it.putExtra("saveBackground", backgroundColor)
+                startActivity(it)
+            }
         }
     }
 }
