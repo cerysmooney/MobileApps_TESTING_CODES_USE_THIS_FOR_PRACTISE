@@ -37,9 +37,8 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
-        //noinspection DataBindingWithoutKapt
-        dataBinding = true
         compose = true
+        dataBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
