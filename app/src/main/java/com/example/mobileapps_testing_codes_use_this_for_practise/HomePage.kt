@@ -75,10 +75,10 @@ class HomePage : ComponentActivity() {
 
         //Log.d("HomePage","name: $callName")
 
-        //Button for getting to calendar page
-        val homeSoundPageButton = findViewById<ImageButton>(R.id.reflectionPageButton)
+        //Button for getting to the goals page
+        val homeSoundPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
         homeSoundPageButton.setOnClickListener {
-            val Intent = Intent(this, SoundPage::class.java)
+            val Intent = Intent(this,GoalsPage::class.java)
             startActivity(Intent)
         }
 
