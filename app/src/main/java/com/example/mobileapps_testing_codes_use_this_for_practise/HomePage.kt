@@ -40,22 +40,45 @@ class HomePage : ComponentActivity() {
         val currentDateAndTime: String = simpleDateFormat.format(Date())
         textView.text = currentDateAndTime
 
+
+        // Declare boolean variables to track the state of each button
+        var isCross1Checked = false
+        var isCross2Checked = false
+        var isCross3Checked = false
+
         //Calling values for the image buttons to allow for changing background
         val imageCross = findViewById<ImageButton>(R.id.imageCross)
         val imageCross2 = findViewById<ImageButton>(R.id.imageCross2)
         val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
-//        val imageCross4 = findViewById<ImageButton>(R.id.goalsPageButton)
 
         //Changing the background on click for each button
         imageCross.setOnClickListener {
-            imageCross.setBackgroundResource(R.drawable.check)
+            isCross1Checked = !isCross1Checked
+            if (isCross1Checked) {
+                imageCross.setBackgroundResource(R.drawable.check)
+            } else {
+                imageCross.setBackgroundResource(R.drawable.cross)
+            }
         }
+
         imageCross2.setOnClickListener {
-            imageCross2.setBackgroundResource(R.drawable.check)
+            isCross2Checked = !isCross2Checked
+            if (isCross2Checked) {
+                imageCross2.setBackgroundResource(R.drawable.check)
+            } else {
+                imageCross2.setBackgroundResource(R.drawable.cross)
+            }
         }
         imageCross3.setOnClickListener {
-            imageCross3.setBackgroundResource(R.drawable.check)
+            isCross3Checked = !isCross3Checked
+            if (isCross3Checked) {
+                imageCross3.setBackgroundResource(R.drawable.check)
+            } else {
+                imageCross3.setBackgroundResource(R.drawable.cross)
+            }
         }
+
+
 
         // Button for getting goals page
         val goalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
