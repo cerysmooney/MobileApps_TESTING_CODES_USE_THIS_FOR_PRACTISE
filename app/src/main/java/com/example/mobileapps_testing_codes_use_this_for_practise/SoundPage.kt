@@ -13,8 +13,10 @@ import androidx.constraintlayout.widget.ConstraintLayout
 class SoundPage : ComponentActivity() {
 
     private lateinit var mediaPlayer: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         //Transition for getting to the page
         window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
@@ -40,7 +42,6 @@ class SoundPage : ComponentActivity() {
         playButtonHappy.setOnClickListener {
 
             //Change Background Colour
-            bgValue.bgColourChange = "#4CB543"
             checkcolor.setBackgroundColor(Color.parseColor("#4CB543"))
 
             //Check to see if the media player is currently in use, stop playing if true
@@ -62,7 +63,6 @@ class SoundPage : ComponentActivity() {
         playButtonOkay.setOnClickListener {
 
             //Change Background Colour
-            bgValue.bgColourChange = "#F49B55"
             checkcolor.setBackgroundColor(Color.parseColor("#F49B55"))
 
             //Check to see if the media player is currently in use, stop playing if true
@@ -84,7 +84,6 @@ class SoundPage : ComponentActivity() {
         playButtonSad.setOnClickListener {
 
             //Change Background Colour
-            bgValue.bgColourChange = "#4C2899"
             checkcolor.setBackgroundColor(Color.parseColor("#4C2899"))
 
             //Check to see if the media player is currently in use, stop playing if true
