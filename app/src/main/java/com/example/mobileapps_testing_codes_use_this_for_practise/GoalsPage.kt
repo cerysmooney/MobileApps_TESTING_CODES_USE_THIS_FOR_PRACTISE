@@ -25,11 +25,11 @@ class GoalsPage : AppCompatActivity(), TaskItemClickListener
 
     private fun setRecyclerView()
     {
-        val mainActivity = this
+        val goalsPage = this
         taskViewModel.taskItems.observe(this){
             binding.todoListRecyclerView.apply {
                 layoutManager = LinearLayoutManager(applicationContext)
-                adapter = TaskItemAdapter(it, mainActivity)
+                adapter = TaskItemAdapter(it, goalsPage)
             }
         }
     }
