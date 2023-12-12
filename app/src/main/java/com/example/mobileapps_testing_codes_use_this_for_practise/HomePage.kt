@@ -60,8 +60,8 @@ class HomePage : ComponentActivity() {
         // Button for getting goals page
         val goalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
         goalsPageButton.setOnClickListener {
-            val Intent = Intent(this, SoundPage::class.java)
-            startActivity(Intent)
+            val goalsPageArrowButton = Intent(this, GoalsPage::class.java)
+            startActivity(goalsPageArrowButton)
         }
 
         //Displaying hello and the name chosen from the name page
