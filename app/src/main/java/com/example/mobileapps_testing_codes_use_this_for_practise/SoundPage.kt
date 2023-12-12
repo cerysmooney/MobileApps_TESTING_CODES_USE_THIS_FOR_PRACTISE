@@ -118,6 +118,12 @@ class SoundPage : ComponentActivity() {
        backToHomePageButton.setOnClickListener {
             val Intent = Intent(this, HomePage::class.java)
             startActivity(Intent)
+
+           currentMediaPlayer?.let {
+               if (it.isPlaying) {
+                   it.stop()
+               }
+           }
         }
     }
 
