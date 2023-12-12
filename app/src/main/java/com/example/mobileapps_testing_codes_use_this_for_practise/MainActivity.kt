@@ -20,7 +20,6 @@ class bgValue{
 }
 class MainActivity : ComponentActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -62,11 +61,11 @@ class MainActivity : ComponentActivity() {
 
                 //Change background colour based on values
                 backgroundColor = when {
-                    progress <= 0 -> "#4C2899"
-                    progress <= 1 -> "#6A77F0"
+                    progress <= 0 -> "#5F64AB"
+                    progress <= 1 -> "#5A9BD4"
                     progress <= 2 -> "#F49B55"
-                    progress <= 3 -> "#FFB800"
-                    else -> "#4CB543"
+                    progress <= 3 -> "#FAB710"
+                    else -> "#5EB45D"
                 }
                 colorBG.setBackgroundColor(Color.parseColor(backgroundColor))
             }
