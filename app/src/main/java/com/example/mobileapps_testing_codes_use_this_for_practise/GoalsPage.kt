@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobileapps_testing_codes_use_this_for_practise.databinding.ActivityMainBinding
-
 class GoalsPage : AppCompatActivity(), TaskItemClickListener
 {
     private lateinit var binding: ActivityMainBinding
