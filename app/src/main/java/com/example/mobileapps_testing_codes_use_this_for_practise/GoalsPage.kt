@@ -1,45 +1,22 @@
 package com.example.mobileapps_testing_codes_use_this_for_practise
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mobileapps_testing_codes_use_this_for_practise.databinding.GoalsPageBinding
-class GoalsPage : AppCompatActivity(), TaskItemClickListener
-{
-    private lateinit var binding: GoalsPageBinding
-    private lateinit var taskViewModel: TaskViewModel
+import androidx.activity.ComponentActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+class GoalsPage : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = GoalsPageBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        taskViewModel = ViewModelProvider(this).get(TaskViewModel::class.java)
-        binding.newTaskButton.setOnClickListener {
-            NewTaskSheet(null).show(supportFragmentManager, "newTaskTag")
-        }
-        setRecyclerView()
-    }
 
-    private fun setRecyclerView()
-    {
-        val goalsPage = this
-        taskViewModel.taskItems.observe(this){
-            binding.todoListRecyclerView.apply {
-                layoutManager = LinearLayoutManager(applicationContext)
-                adapter = TaskItemAdapter(it, goalsPage)
-            }
-        }
-    }
+        //Connecting to Layout
+        setContentView(R.layout.goals_page)
 
-    override fun editTaskItem(taskItem: TaskItem)
-    {
-        NewTaskSheet(taskItem).show(supportFragmentManager,"newTaskTag")
-    }
-
-    override fun completeTaskItem(taskItem: TaskItem)
-    {
-        taskViewModel.setCompleted(taskItem)
+        //BG background
+        val bgcolorsaved = bgValue.bgColourChange
+        val checkcolor = findViewById<ConstraintLayout>(R.id.goals_page_layout)
+        checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
     }
 }
+
+
