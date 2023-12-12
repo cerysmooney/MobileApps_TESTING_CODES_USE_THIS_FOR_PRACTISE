@@ -50,7 +50,7 @@ class GoalsPage : ComponentActivity() {
 
         }
 
-        val backToHomeButton = findViewById<Button>(R.id.toHomeButton)
+        val backToHomeButton = findViewById<Button>(R.id.cancelButton)
         backToHomeButton.setOnClickListener {
             val Intent = Intent(this, HomePage::class.java).also {
                 //it.putExtra("saveBackground", backgroundColor)
