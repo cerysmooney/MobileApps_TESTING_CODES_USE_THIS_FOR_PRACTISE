@@ -4,16 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mobileapps_testing_codes_use_this_for_practise.databinding.ActivityMainBinding
+import com.example.mobileapps_testing_codes_use_this_for_practise.databinding.GoalsPageBinding
 class GoalsPage : AppCompatActivity(), TaskItemClickListener
 {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: GoalsPageBinding
     private lateinit var taskViewModel: TaskViewModel
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = GoalsPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
         taskViewModel = ViewModelProvider(this).get(TaskViewModel::class.java)
         binding.newTaskButton.setOnClickListener {
