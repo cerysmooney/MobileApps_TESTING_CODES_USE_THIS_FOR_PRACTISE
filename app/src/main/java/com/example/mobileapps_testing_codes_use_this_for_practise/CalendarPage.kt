@@ -17,23 +17,6 @@ class CalendarPage : ComponentActivity() {
         val calendarView = findViewById<CalendarView>(R.id.calendarView)
 
 
-
-        val homeGoalsPageButton = findViewById<ImageButton>(R.id.reflectionPageButton3)
-        homeGoalsPageButton.setOnClickListener {
-            val Intent = Intent(this,GoalsPage::class.java)
-            startActivity(Intent)
-        }
-
-        val homeHomePageButton = findViewById<ImageButton>(R.id.reflectionPageButton2)
-        homeGoalsPageButton.setOnClickListener {
-            val Intent = Intent(this,GoalsPage::class.java)
-            startActivity(Intent)
-        }
-
-
-
-
-
         // Set a listener for date changes
 //        calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
 //            val selectedDate = "$dayOfMonth-${month + 1}/$year"

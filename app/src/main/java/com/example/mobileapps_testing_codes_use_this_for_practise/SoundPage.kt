@@ -113,22 +113,39 @@ class SoundPage : ComponentActivity() {
             }
         }
 
-        val backToHomePageButton = findViewById<ImageButton>(R.id.reflectionPageButton2)
-       backToHomePageButton.setOnClickListener {
-            val Intent = Intent(this, HomePage::class.java)
-            startActivity(Intent)
-
-           currentMediaPlayer?.let {
-               if (it.isPlaying) {
-                   it.stop()
-               }
-           }
-        }
-
         val backButton = findViewById<Button>(R.id.cancelButton)
         backButton.setOnClickListener {
             val Intent = Intent(this, HomePage::class.java)
             startActivity(Intent)
+
+            currentMediaPlayer?.let {
+                if (it.isPlaying) {
+                    it.stop()
+                }
+            }
+        }
+
+
+        //NAVIGATION BAR
+
+        //Button for getting to the home page
+        val soundHomePageButton = findViewById<ImageButton>(R.id.homePageButtonNav)
+        soundHomePageButton.setOnClickListener {
+            val homePageScreen = Intent(this,HomePage::class.java)
+            startActivity(homePageScreen)
+
+            currentMediaPlayer?.let {
+                if (it.isPlaying) {
+                    it.stop()
+                }
+            }
+        }
+
+        // Button for getting goals page
+        val soundGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButtonNav)
+        soundGoalsPageButton.setOnClickListener {
+            val goalsPageScreen = Intent(this,GoalsPage::class.java)
+            startActivity(goalsPageScreen)
 
             currentMediaPlayer?.let {
                 if (it.isPlaying) {

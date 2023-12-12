@@ -75,19 +75,7 @@ class HomePage : ComponentActivity() {
 
         //Log.d("HomePage","name: $callName")
 
-        //Button for getting to the goals page
-        val homeSoundPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
-        homeSoundPageButton.setOnClickListener {
-            val Intent = Intent(this,GoalsPage::class.java)
-            startActivity(Intent)
-        }
 
-        // Button for getting goals page
-        val homeGoalsPageButton = findViewById<ImageButton>(R.id.reflectionPageButton3)
-        homeGoalsPageButton.setOnClickListener {
-            val GoalsPageScreen = Intent(this,GoalsPage::class.java)
-            startActivity(GoalsPageScreen)
-        }
 
 
         //Button for Expanding on Feelings
@@ -99,6 +87,25 @@ class HomePage : ComponentActivity() {
             val intent = Intent(this, ExpandOnFeelingsPage::class.java)
             startActivity(intent)
         }
+
+        
+        //NAVIGATION BAR
+
+        //Button for getting to the sounds page
+        val homeSoundPageButton = findViewById<ImageButton>(R.id.soundPageButtonNav)
+        homeSoundPageButton.setOnClickListener {
+            val soundPageScreen = Intent(this,SoundPage::class.java)
+            startActivity(soundPageScreen)
+        }
+
+        // Button for getting goals page
+        val homeGoalsPageButton = findViewById<ImageButton>(R.id.goalsPageButtonNav)
+        homeGoalsPageButton.setOnClickListener {
+            val goalsPageScreen = Intent(this,GoalsPage::class.java)
+            startActivity(goalsPageScreen)
+        }
+
+
     }
 }
 
