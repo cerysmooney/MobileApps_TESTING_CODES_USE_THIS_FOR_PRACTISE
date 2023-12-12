@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/reflectionPageButton"
+        android:id="@+id/soundPageButtonNav"
         android:layout_width="67dp"
         android:layout_height="58dp"
         android:background="@drawable/baseline_volume_up_24"
@@ -142,7 +142,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <ImageButton
-        android:id="@+id/reflectionPageButton2"
+        android:id="@+id/homePageButtonNav"
         android:layout_width="77dp"
         android:layout_height="61dp"
         android:background="@drawable/owlhead"
@@ -154,7 +154,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <ImageButton
-        android:id="@+id/reflectionPageButton3"
+        android:id="@+id/goalsPageButtonNav"
         android:layout_width="79dp"
         android:layout_height="69dp"
         android:background="@drawable/baseline_checklist_rtl_24"
