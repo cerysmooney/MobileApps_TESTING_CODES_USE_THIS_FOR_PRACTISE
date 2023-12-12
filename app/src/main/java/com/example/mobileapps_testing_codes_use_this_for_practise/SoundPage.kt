@@ -125,6 +125,18 @@ class SoundPage : ComponentActivity() {
                }
            }
         }
+
+        val backButton = findViewById<Button>(R.id.cancelButton)
+        backButton.setOnClickListener {
+            val Intent = Intent(this, HomePage::class.java)
+            startActivity(Intent)
+
+            currentMediaPlayer?.let {
+                if (it.isPlaying) {
+                    it.stop()
+                }
+            }
+        }
     }
 
 
