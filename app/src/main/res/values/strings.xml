@@ -4,7 +4,7 @@
     <string name="title_activity_calendar_page">CalendarPage</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_checklist">Checklist</string>
-    <string name="title_activity_goals_page">Goals</string>
+    <string name="title_activity_goals_page">Set your Goals</string>
     <string name="title_activity_expand_on_feelings_page">ExpandOnFeelingsPage</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_reflection_page">ReflectionPage</string>
@@ -28,6 +28,7 @@
     <string name="what_s_your_name">What\'s Your Name?</string>
     <string name="need_to_relax">Need to Relax?</string>
     <string name="stop_music">Stop Music</string>
+    <string name="goals_page_subheading">Add and edit your goals that you wish to fulfil</string>
     <string name="here_s_some_sounds_we_think_you_ll_enjoy">Here\'s some sounds we think you\'ll enjoy!</string>
     <string name="awesome">Awesome</string>
     <string name="awful">Awful</string>

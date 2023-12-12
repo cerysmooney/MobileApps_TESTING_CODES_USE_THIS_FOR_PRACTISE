@@ -5,70 +5,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/goals_page_layout">
+    android:id="@+id/goals_page_layout"
+    android:background="@color/okay"
+    tools:context=".GoalsPage">
 
-
-    <EditText
-        android:id="@+id/typeYourGoal1"
-        android:layout_width="359dp"
-        android:layout_height="73dp"
-        android:background="@drawable/transparent_textbox_with_stroke"
-        android:ems="10"
-        android:hint="@string/type_your_goal"
-        android:inputType="textMultiLine"
-        android:lines="4"
-        android:maxLines="6"
-        android:singleLine="false"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
+    <!-- Headings -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:text="@string/title_activity_goals_page"
+        android:textColor="@color/white"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintVertical_bias="0.055" />
 
-    <EditText
-        android:id="@+id/typeYourGoal2"
-        android:layout_width="359dp"
-        android:layout_height="73dp"
-        android:background="@drawable/transparent_textbox_with_stroke"
-        android:ems="10"
-        android:hint="@string/type_your_goal"
-        android:inputType="textMultiLine"
-        android:lines="4"
-        android:maxLines="6"
-        android:singleLine="false"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:text="@string/goals_page_subheading"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.367" />
+        app:layout_constraintVertical_bias="0.199" />
 
-    <EditText
-        android:id="@+id/typeYourGoal3"
-        android:layout_width="359dp"
-        android:layout_height="73dp"
-        android:background="@drawable/transparent_textbox_with_stroke"
-        android:ems="10"
-        android:hint="@string/type_your_goal"
-        android:inputType="textMultiLine"
-        android:lines="4"
-        android:maxLines="6"
-        android:singleLine="false"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
+        android:background="@drawable/button_background_dark"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
 
     <EditText
         android:id="@+id/typeYourGoal4"
@@ -86,10 +67,73 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.749" />
+
+    <EditText
+        android:id="@+id/typeYourGoal2"
+        android:layout_width="359dp"
+        android:layout_height="73dp"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <EditText
+        android:id="@+id/typeYourGoal3"
+        android:layout_width="359dp"
+        android:layout_height="73dp"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+
+    <EditText
+        android:id="@+id/typeYourGoal1"
+        android:layout_width="359dp"
+        android:layout_height="73dp"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
 
     <TextView
         android:id="@+id/textView6"
@@ -141,4 +185,5 @@
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
