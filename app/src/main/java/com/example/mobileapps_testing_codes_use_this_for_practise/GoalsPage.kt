@@ -3,6 +3,7 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.view.Window
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -10,6 +11,15 @@ import androidx.constraintlayout.widget.ConstraintLayout
 class GoalsPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Transition
+        //Transition for getting to the page
+        window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+        overrideActivityTransition(
+            OVERRIDE_TRANSITION_OPEN,
+            R.anim.slide_in_right,
+            R.anim.slide_out_left
+        )
 
         //Connecting to Layout
         setContentView(R.layout.goals_page)

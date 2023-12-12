@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -20,6 +21,14 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Transition for getting to the page
+        window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+        overrideActivityTransition(
+            OVERRIDE_TRANSITION_OPEN,
+            R.anim.slide_in_right,
+            R.anim.slide_out_left
+        )
 
         //Connecting to xml layout
         setContentView(R.layout.expand_on_feelings_page)
