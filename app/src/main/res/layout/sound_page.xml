@@ -132,7 +132,7 @@
         android:id="@+id/soundPageButtonNav"
         android:layout_width="67dp"
         android:layout_height="58dp"
-        android:background="@drawable/baseline_volume_up_24"
+        android:background="@drawable/baseline_volume_up_24_highlight"
         android:elevation="10dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
