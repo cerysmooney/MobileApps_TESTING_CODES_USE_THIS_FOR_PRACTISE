@@ -94,7 +94,7 @@
         android:layout_width="109dp"
         android:layout_height="52dp"
         android:background="@drawable/button_background_dark"
-        android:text="@string/back"
+        android:text="@string/to_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
