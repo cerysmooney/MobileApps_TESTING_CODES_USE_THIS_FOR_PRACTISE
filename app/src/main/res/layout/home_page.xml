@@ -185,7 +185,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageCross"
         app:layout_constraintVertical_bias="0.4" />
-<!--The user can add their own goal-->
+<!--Example of how user can add their own goal-->
     <TextView
         android:id="@+id/goalsPageAddYourOwn"
         android:layout_width="320dp"
@@ -201,7 +201,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageCross"
         app:layout_constraintVertical_bias="0.6" />
 
-<!--Nav bar-->
+<!--Nav bar components-->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="430dp"

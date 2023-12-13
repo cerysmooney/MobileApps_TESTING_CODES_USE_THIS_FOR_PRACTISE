@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SoundPage">
-
+<!--Header-->
     <TextView
         android:id="@+id/title"
         android:layout_width="371dp"
@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.055" />
-
+<!--Subhead-->
     <TextView
         android:id="@+id/header"
         android:layout_width="371dp"
@@ -74,8 +74,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.38" />
 
-    <!--Owl Image-->
 
+<!--Stop playing music button-->
     <Button
         android:id="@+id/stopButton"
         android:layout_width="109dp"
@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.54" />
-
+<!--Back to home page button-->
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="109dp"
@@ -101,7 +101,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.67" />
-
+<!--Owl vector-->
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="310dp"
@@ -114,7 +114,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.848" />
 
-<!--Nav Bar-->
+<!--Nav Bar contents-->
 
     <TextView
         android:id="@+id/textView6"
@@ -127,7 +127,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-
+<!--Nav icon for sound page (greyed out to show they're on that page)-->
     <ImageButton
         android:id="@+id/soundPageButtonNav"
         android:layout_width="67dp"
@@ -140,7 +140,7 @@
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
-
+<!--Nav icon for home page-->
     <ImageButton
         android:id="@+id/homePageButtonNav"
         android:layout_width="80dp"
@@ -152,7 +152,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
-
+<!--Nav icon for goals page-->
     <ImageButton
         android:id="@+id/goalsPageButtonNav"
         android:layout_width="79dp"

@@ -8,7 +8,7 @@
     android:background="#F49B55"
     tools:context=".MainActivity">
 
-
+<!--Header-->
     <TextView
         android:id="@+id/header1"
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.077" />
 
-
+<!--Subhead-->
     <TextView
         android:id="@+id/body1"
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.147" />
 
-
+<!--Owl vector-->
     <ImageView
         android:id="@+id/owl_images"
         android:layout_width="177dp"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.087" />
 
-
+<!--range of emotions text display-->
     <TextView
         android:id="@+id/emotions"
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.671" />
 
-
+<!--Seekbar for users to choose the range of emotions-->
     <SeekBar
         android:id="@+id/seekBar2"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
@@ -80,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.791" />
-
+<!--Next page button-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.906" />
-
+<!--Skip page button-->
     <Button
         android:id="@+id/skipButton"
         android:layout_width="wrap_content"

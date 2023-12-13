@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088" />
-
+<!--Subhead-->
     <TextView
         android:id="@+id/textView8"
         android:layout_width="183dp"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.255" />
-
+<!--Button to go to homepage-->
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="109dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-<!--Goals Boxes-->
+<!--Write your own goals boxes-->
     <EditText
         android:id="@+id/typeYourGoal1"
         android:layout_width="360dp"
@@ -136,7 +136,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65" />
-<!--Nav Bar -->
+<!--Nav Bar components -->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="430dp"
@@ -148,7 +148,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-
+<!--Nav button for sound page-->
     <ImageButton
         android:id="@+id/soundPageButtonNav"
         android:layout_width="67dp"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
         />
-
+<!--Nav button for homepage-->
     <ImageButton
         android:id="@+id/homePageButtonNav"
         android:layout_width="80dp"
@@ -174,7 +174,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
-
+<!--Nav button (greyed out) to show user is on goals page-->
     <ImageButton
         android:id="@+id/goalsPageButtonNav"
         android:layout_width="79dp"
@@ -187,7 +187,7 @@
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
-
+<!--Owl vector-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="211dp"
