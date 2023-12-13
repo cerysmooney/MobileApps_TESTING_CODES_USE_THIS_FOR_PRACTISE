@@ -136,7 +136,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65" />
-
+<!--Nav Bar -->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="430dp"
