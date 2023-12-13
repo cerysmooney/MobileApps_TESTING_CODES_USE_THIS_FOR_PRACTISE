@@ -16,6 +16,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     private lateinit var button: Button
     private lateinit var imageView: ImageView
 
+    // process adding an image from gallery
     companion object{
         const val IMAGE_REQUEST_CODE = 100
     }
@@ -33,7 +34,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         //Connecting to xml layout
         setContentView(R.layout.expand_on_feelings_page)
 
-//      overrideActivityTransition( OVERRIDE_TRANSITION_CLOSE, R.anim.fade_out, R.anim.fade_in)
+
 
         //Setting up Variables for buttons
         findViewById<EditText>(R.id.enterName)
@@ -97,6 +98,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         }
     }
 
+    // adding image from gallery and running code
     private fun pickImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
