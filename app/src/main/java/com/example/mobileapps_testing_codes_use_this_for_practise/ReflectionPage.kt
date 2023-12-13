@@ -39,7 +39,7 @@ class ReflectionPage : ComponentActivity() {
         val happyButton = findViewById<Button>(R.id.happyButton)
         val awesomeButton = findViewById<Button>(R.id.awesomeButton)
 
-        //setting up buttons for choosing an image
+        //Setting up buttons for choosing an image
         button = findViewById(R.id.btn_pick_img)
         imageView = findViewById(R.id.img_save)
 

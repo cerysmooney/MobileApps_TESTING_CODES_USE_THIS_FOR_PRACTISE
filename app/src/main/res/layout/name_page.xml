@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFB800" >
 
-
+<!--Owl vector-->
     <ImageView
         android:id="@+id/owl_images"
         android:layout_width="283dp"
@@ -18,9 +18,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.41" />
-
+<!--Next button-->
     <Button
-        android:id="@+id/nameButton"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_background_white"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.878" />
-
+<!--Place for users to input their name-->
     <EditText
         android:id="@+id/enterName"
         android:layout_width="262dp"
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.758" />
-
+<!--Header-->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="366dp"
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.098" />
-
+<!--Back to previous page button-->
     <Button
         android:id="@+id/emotionButton"
         android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.956" />
-
+<!--Skip name page button-->
     <Button
         android:id="@+id/skipToHomeButton"
         android:layout_width="wrap_content"

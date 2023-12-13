@@ -16,7 +16,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
     private lateinit var button: Button
     private lateinit var imageView: ImageView
 
-    // process adding an image from gallery
+    // Process adding an image from gallery
     companion object{
         const val IMAGE_REQUEST_CODE = 100
     }
@@ -53,7 +53,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             pickImageGallery()
         }
 
-        //BG background
+        //Calling BG background
         val bgcolorsaved = bgValue.bgColourChange
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
@@ -80,7 +80,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
         }
 
-        //change the background colour on log for across the app
+        //Change the background colour on log for across the app
         Log.d("expand", "color check: $bgcolorsaved")
 
         //Save button goes to home page
@@ -98,7 +98,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         }
     }
 
-    // adding image from gallery and running code
+    // Adding image from gallery and running code
     private fun pickImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"

@@ -12,7 +12,7 @@ import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
-
+// Global variable to save BG colour
 class bgValue{
     companion object{
         var bgColourChange: String = ""

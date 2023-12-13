@@ -25,7 +25,7 @@ class NamePage : ComponentActivity() {
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
         setContentView(R.layout.name_page)
 
-        //val bgcolorsaved = intent.getStringExtra("saveBackground")
+        // Calling variables to sav bg colour from previous page
         val bgcolorsaved = bgValue.bgColourChange
         val editText = findViewById<EditText>(R.id.enterName)
         val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
@@ -33,36 +33,40 @@ class NamePage : ComponentActivity() {
 
         checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
-
-        val calendarPageButton = findViewById<Button>(R.id.nameButton)
+        // Button to go to next page
+        val calendarPageButton = findViewById<Button>(R.id.nextButton)
         calendarPageButton.setOnClickListener {
+
+            // save entered name from EditText
             NameValue.nameData = editText.text.toString()
             val setName = NameValue.nameData
             Log.d("NamePage", "setName: $setName")
-            //val name = editText.text.toString()
-            //Log.d("NamePage", "name:$name")
+
+            // Next button goes to homepage
             Intent(this, HomePage::class.java).also{
-                //it.putExtra("textSave",name)
                 startActivity(it)
             }
 
         }
 
+        // Button to go back to previous page
         val emotionPageButton = findViewById<Button>(R.id.emotionButton)
         emotionPageButton.setOnClickListener {
-            //  Log.d("NamePage", "setName: $setName")
-            //val name = editText.text.toString()
-            //Log.d("NamePage", "name:$name")
+
+            // Back button goes to MainActivity (how are you feeling) page
           Intent(this, MainActivity::class.java).also {
                 //it.putExtra("textSave",name)
                 startActivity(it)
             }
         }
 
+        // Button to skip name page and go to the homepage
         val skipHome = findViewById<Button>(R.id.skipToHomeButton)
         skipHome.setOnClickListener {
+
+            // Button goes to homepage
             Intent(this, HomePage::class.java).also {
-                //it.putExtra("textSave",name)
+
                 startActivity(it)
             }
         }
