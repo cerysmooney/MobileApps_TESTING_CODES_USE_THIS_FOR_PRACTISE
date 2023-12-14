@@ -11,33 +11,37 @@
     tools:context=".HomePage">
 
 <!-- Header-->
+    <!--Display date and time-->
+
+    <!--Expand on feelings section-->
+    <!--Button to go to Expand on Feelings Page-->
     <TextView
         android:id="@+id/intro"
-        android:layout_width="249dp"
-        android:layout_height="55dp"
+        android:layout_width="365dp"
+        android:layout_height="59dp"
         android:text="@string/hello"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
-<!--Display date and time-->
+        app:layout_constraintVertical_bias="0.065" />
+
     <TextView
         android:id="@+id/dateAndTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/intro"
-        android:layout_marginTop="4dp"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/intro"
         app:layout_constraintEnd_toEndOf="@+id/intro"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/intro"
-        app:layout_constraintTop_toBottomOf="@+id/intro" />
-<!--Expand on feelings section-->
-    <!--Button to go to Expand on Feelings Page-->
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
     <TextView
         android:id="@+id/expand_on_feelings"
         android:layout_width="390dp"

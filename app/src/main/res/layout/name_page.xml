@@ -40,6 +40,7 @@
         android:background="#C2FBFBFB"
         android:ems="10"
         android:autofillHints="@null"
+        android:maxLength="10"
         android:hint="@string/type_your_name_here"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
