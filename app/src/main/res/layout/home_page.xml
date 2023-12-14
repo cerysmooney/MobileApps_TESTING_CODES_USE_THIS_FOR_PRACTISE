@@ -69,9 +69,9 @@
         android:elevation="10dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/expand_on_feelings"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/expand_on_feelings"
         app:layout_constraintStart_toStartOf="@+id/expand_on_feelings"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="@+id/expand_on_feelings" />
 
     <ImageView
         android:id="@+id/goalsPageBG"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/expand_on_feelings"
         app:layout_constraintVertical_bias="1.0" />
 
 <!--Checklist-->
