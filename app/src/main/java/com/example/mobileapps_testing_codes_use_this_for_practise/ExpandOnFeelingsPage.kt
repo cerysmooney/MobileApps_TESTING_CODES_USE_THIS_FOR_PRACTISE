@@ -58,6 +58,12 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             pickImageGallery()
         }
 
+        //Saving Text into EditText
+        val callFeelings = EoFData.expandonFeelingsTextData
+        findViewById<EditText>(R.id.feelingsexpansion).apply {
+            setText(callFeelings)
+        }
+
         //Calling BG background
         val bgcolorsaved = BGValue.bgColourChange
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
