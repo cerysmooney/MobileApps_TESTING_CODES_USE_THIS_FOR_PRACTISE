@@ -67,7 +67,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             colorBg.setBackgroundColor(Color.parseColor("#6A77F0"))
         }
         okayButton.setOnClickListener {
-            BGValue.bgColourChange = "F49B55"
+            BGValue.bgColourChange = "#F49B55"
             colorBg.setBackgroundColor(Color.parseColor("#F49B55"))
         }
         happyButton.setOnClickListener {
