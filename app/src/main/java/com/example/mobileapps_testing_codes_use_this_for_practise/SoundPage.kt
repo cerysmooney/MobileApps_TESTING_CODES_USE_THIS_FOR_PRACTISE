@@ -150,6 +150,7 @@ class SoundPage : ComponentActivity() {
         }
     }
 
+    //Having the media be able to be muted
     private class MutableMediaPlayer {
         var mediaPlayer: MediaPlayer? = null
     }
