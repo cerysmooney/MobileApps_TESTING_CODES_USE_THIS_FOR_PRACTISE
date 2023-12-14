@@ -7,6 +7,7 @@ import android.view.Window
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
@@ -56,6 +57,12 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         //Being able to choose image
         button.setOnClickListener {
             pickImageGallery()
+        }
+
+        //Saving Text into EditText
+        val callFeelings = EoFData.expandonFeelingsTextData
+        findViewById<EditText>(R.id.feelingsexpansion).apply {
+            setText(callFeelings)
         }
 
         //Calling BG background
