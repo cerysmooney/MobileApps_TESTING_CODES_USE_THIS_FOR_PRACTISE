@@ -25,6 +25,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.059" />
 <!--Display date and time-->
+    <!--Expand on feelings section-->
+    <!--Button to go to Expand on Feelings Page-->
+
     <TextView
         android:id="@+id/dateAndTime"
         android:layout_width="wrap_content"
@@ -33,11 +36,10 @@
         android:layout_marginTop="4dp"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/intro"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="@+id/intro"
         app:layout_constraintTop_toBottomOf="@+id/intro" />
-<!--Expand on feelings section-->
-    <!--Button to go to Expand on Feelings Page-->
+
     <TextView
         android:id="@+id/expand_on_feelings"
         android:layout_width="390dp"
