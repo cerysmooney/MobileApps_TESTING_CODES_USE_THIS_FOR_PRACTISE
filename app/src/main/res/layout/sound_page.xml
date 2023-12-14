@@ -5,8 +5,9 @@
     android:id="@+id/sound_page_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/okay"
     tools:context=".SoundPage">
-<!--Header-->
+    <!--Header-->
     <TextView
         android:id="@+id/title"
         android:layout_width="371dp"
@@ -14,13 +15,14 @@
         android:text="@string/need_to_relax"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.055" />
-<!--Subhead-->
+    <!--Subhead-->
     <TextView
         android:id="@+id/header"
         android:layout_width="371dp"
@@ -35,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.199" />
 
-<!--Sound Buttons-->
+    <!--Sound Buttons-->
 
     <ImageButton
         android:id="@+id/playSoundHappy"
@@ -78,7 +80,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
 
-<!--Stop playing music button-->
+    <!--Stop playing music button-->
     <Button
         android:id="@+id/stopButton"
         android:layout_width="109dp"
@@ -91,7 +93,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.54" />
-<!--Back to home page button-->
+    <!--Back to home page button-->
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="109dp"
@@ -104,7 +106,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.67" />
-<!--Owl vector-->
+    <!--Owl vector-->
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="310dp"
@@ -118,7 +120,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.848" />
 
-<!--Nav Bar contents-->
+    <!--Nav Bar contents-->
 
     <TextView
         android:id="@+id/textView6"
@@ -131,42 +133,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-<!--Nav icon for sound page (greyed out to show they're on that page)-->
+    <!--Nav icon for sound page (greyed out to show they're on that page)-->
     <ImageButton
         android:id="@+id/soundPageButtonNav"
         android:layout_width="67dp"
         android:layout_height="58dp"
         android:background="@drawable/baseline_volume_up_24_highlight"
+        android:contentDescription="@null"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
-<!--Nav icon for home page-->
+    <!--Nav icon for home page-->
     <ImageButton
         android:id="@+id/homePageButtonNav"
         android:layout_width="80dp"
         android:layout_height="60dp"
         android:background="@drawable/owlheadokay"
+        android:contentDescription="@null"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
-<!--Nav icon for goals page-->
+    <!--Nav icon for goals page-->
     <ImageButton
         android:id="@+id/goalsPageButtonNav"
         android:layout_width="79dp"
         android:layout_height="69dp"
         android:background="@drawable/baseline_checklist_rtl_24"
+        android:contentDescription="@null"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.897"

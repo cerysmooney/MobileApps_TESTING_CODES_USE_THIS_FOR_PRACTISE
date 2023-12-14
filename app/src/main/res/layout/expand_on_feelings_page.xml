@@ -4,59 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/expand_on_feelings_colour"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/okay">
 
-<!--  Headings  -->
+    <!--  Headings  -->
+    <!--Sub head-->
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/expand_on_your_feelings"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="50sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-<!--Sub head-->
+        app:layout_constraintVertical_bias="0.001" />
+
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/how_does_expanding_make_you_feel"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    Box users can write in -->
+    <!--    Box users can write in -->
     <EditText
         android:id="@+id/enterName"
         android:layout_width="351dp"
         android:layout_height="200dp"
+        android:autofillHints="@null"
         android:background="@drawable/transparent_textbox_with_stroke"
         android:ems="10"
-        android:autofillHints="@null"
         android:hint="@string/type_here_to_expand_on_how_you_re_feeling"
-        android:textColorHint="@color/white"
         android:inputType="textMultiLine"
         android:lines="4"
         android:maxLines="6"
         android:singleLine="false"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.238" />
-<!-- Clickable buttons where users can show their emotions -->
+    <!-- Clickable buttons where users can show their emotions -->
     <Button
         android:id="@+id/awfulButton"
         android:layout_width="70dp"
@@ -123,33 +127,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.623" />
-<!-- Cancel and go to homepage button-->
+    <!-- Cancel and go to homepage button-->
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="139dp"
         android:layout_height="53dp"
-        android:text="@string/cancel"
         android:background="@drawable/button_background_dark"
+        android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
-<!--Save and go to homepage button-->
+    <!--Save and go to homepage button-->
     <Button
         android:id="@+id/saveButton"
         android:layout_width="139dp"
         android:layout_height="53dp"
-        android:text="@string/save"
         android:background="@drawable/button_background_white"
+        android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-<!--Where image will go when added in-->
+    <!--Where image will go when added in-->
     <ImageView
         android:id="@+id/img_save"
         android:layout_width="195dp"
@@ -161,13 +165,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.985" />
-<!--Button for users to click and choose their image from their gallery-->
+    <!--Button for users to click and choose their image from their gallery-->
     <Button
         android:id="@+id/btn_pick_img"
         android:layout_width="139dp"
         android:layout_height="53dp"
-        android:text="@string/choose_image"
         android:background="@drawable/button_background_white"
+        android:text="@string/choose_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"

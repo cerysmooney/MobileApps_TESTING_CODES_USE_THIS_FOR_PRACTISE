@@ -9,37 +9,39 @@
     tools:context=".MainActivity">
 
 <!--Header-->
+
+    <!--Subhead-->
     <TextView
         android:id="@+id/header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="10dp"
         android:text="@string/hello_there"
         android:textColor="#ffffff"
-        android:textSize="40sp"
-        android:elevation="10dp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintVertical_bias="0.057" />
 
-<!--Subhead-->
+    <!--Owl vector-->
     <TextView
         android:id="@+id/body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="10dp"
         android:text="@string/how_are_you_feeling_today"
         android:textColor="#ffffff"
-        android:elevation="10dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.151" />
 
-<!--Owl vector-->
     <ImageView
         android:id="@+id/owl_images"
         android:layout_width="177dp"
@@ -59,7 +61,7 @@
         android:layout_height="wrap_content"
         android:text="@string/okay"
         android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
