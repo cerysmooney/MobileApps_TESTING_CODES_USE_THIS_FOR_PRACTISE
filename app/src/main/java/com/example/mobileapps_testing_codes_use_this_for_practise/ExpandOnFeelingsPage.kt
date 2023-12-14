@@ -59,12 +59,12 @@ class ExpandOnFeelingsPage : ComponentActivity() {
 
         //Change background based on button
         awfulButton.setOnClickListener {
-            BGValue.bgColourChange = "#4C2899"
-            colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
+            BGValue.bgColourChange = "#5F64AB"
+            colorBg.setBackgroundColor(Color.parseColor("#5F64AB"))
         }
         sadButton.setOnClickListener {
-            BGValue.bgColourChange = "#6A77F0"
-            colorBg.setBackgroundColor(Color.parseColor("#6A77F0"))
+            BGValue.bgColourChange = "#5A9BD4"
+            colorBg.setBackgroundColor(Color.parseColor("#5A9BD4"))
         }
         okayButton.setOnClickListener {
             BGValue.bgColourChange = "#F49B55"
@@ -75,8 +75,8 @@ class ExpandOnFeelingsPage : ComponentActivity() {
             colorBg.setBackgroundColor(Color.parseColor("#FFB800"))
         }
         awesomeButton.setOnClickListener {
-            BGValue.bgColourChange = "#4CB543"
-            colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
+            BGValue.bgColourChange = "#5EB45D"
+            colorBg.setBackgroundColor(Color.parseColor("#5EB45D"))
         }
 
         //Save button goes to home page

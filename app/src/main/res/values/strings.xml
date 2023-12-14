@@ -41,5 +41,12 @@
     <string name="type_your_goal">Type Your Goal</string>
     <string name="to_home">To home</string>
     <string name="reflection">Reflection</string>
+    <string name="soundpagenav">soundPageNav</string>
+    <string name="homepagenav">homePageNav</string>
+    <string name="goalspagenav">goalsPageNav</string>
+    <string name="playsoundsad">playSoundSad</string>
+    <string name="playsoundokay">playSoundokay</string>
+    <string name="playsoundhappy">playsoundhappy</string>
+    <string name="branchowl">branchOwl</string>
     <!--    <string name="continue">Continue</string>-->
 </resources>
