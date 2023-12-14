@@ -11,6 +11,7 @@
     <string name="hello">Hello…</string>
     <string name="hello_with_space">Hello\u0020</string>
     <string name="expand_on_your_feelings">Expand On Your Feelings</string>
+    <string name="expand_feelings_pg">Expand On Your Feelings:\n\n</string>
     <string name="back">Back</string>
     <string name="title_activity_sound_page">SoundPage</string>
     <string name="title_activity_main2">MainActivity2</string>
@@ -41,5 +42,18 @@
     <string name="type_your_goal">Type Your Goal</string>
     <string name="to_home">To home</string>
     <string name="reflection">Reflection</string>
+    <string name="soundpagenav">soundPageNav</string>
+    <string name="homepagenav">homePageNav</string>
+    <string name="goalspagenav">goalsPageNav</string>
+    <string name="playsoundsad">playSoundSad</string>
+    <string name="playsoundokay">playSoundokay</string>
+    <string name="playsoundhappy">playsoundhappy</string>
+    <string name="branchowl">branchOwl</string>
+    <string name="imagecrosschecklist">imageCrossChecklist</string>
+    <string name="imagecrosschecklist2">imageCrossChecklist2</string>
+    <string name="imagecrosschecklist3">imageCrossChecklist3</string>
+    <string name="imageplusicon">imagePlusIcon</string>
+    <string name="goalspagesectionbg">goalsPageSectionBg</string>
+    <string name="gotogoalspage">goToGoalsPage</string>
     <!--    <string name="continue">Continue</string>-->
 </resources>

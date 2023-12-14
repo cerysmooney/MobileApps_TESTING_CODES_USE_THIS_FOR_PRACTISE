@@ -10,6 +10,12 @@ import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
+class EoFData {
+    companion object {
+        var expandonFeelingsTextData: String = ""
+    }
+}
+
 class ExpandOnFeelingsPage : ComponentActivity() {
 
     private lateinit var button: Button
@@ -36,7 +42,7 @@ class ExpandOnFeelingsPage : ComponentActivity() {
 
 
         //Setting up Variables for buttons
-        findViewById<EditText>(R.id.enterName)
+        val editText = findViewById<EditText>(R.id.feelingsexpansion)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
         val okayButton = findViewById<Button>(R.id.okayButton)
@@ -82,6 +88,9 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         //Save button goes to home page
         val goToHomePage = findViewById<Button>(R.id.saveButton)
         goToHomePage.setOnClickListener {
+
+            EoFData.expandonFeelingsTextData = editText.text.toString()
+
            val toHomePageSave = Intent(this, HomePage::class.java)
             startActivity(toHomePageSave)
         }

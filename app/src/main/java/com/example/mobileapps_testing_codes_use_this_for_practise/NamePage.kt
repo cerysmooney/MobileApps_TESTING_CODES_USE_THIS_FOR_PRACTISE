@@ -50,10 +50,8 @@ class NamePage : ComponentActivity() {
         emotionPageButton.setOnClickListener {
 
             // Back button goes to MainActivity (how are you feeling) page
-          Intent(this, MainActivity::class.java).also {
-                //it.putExtra("textSave",name)
-                startActivity(it)
-            }
+            val backButton = Intent(this, MainActivity::class.java)
+            startActivity(backButton)
         }
 
         // Button to skip name page and go to the homepage
@@ -61,10 +59,8 @@ class NamePage : ComponentActivity() {
         skipHome.setOnClickListener {
 
             // Button goes to homepage
-            Intent(this, HomePage::class.java).also {
-
-                startActivity(it)
-            }
+            val gotoHomePage = Intent(this, HomePage::class.java)
+            startActivity(gotoHomePage)
         }
     }
 }

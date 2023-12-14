@@ -37,108 +37,127 @@
         app:layout_constraintStart_toStartOf="@+id/intro"
         app:layout_constraintTop_toBottomOf="@+id/intro" />
 <!--Expand on feelings section-->
+    <!--Button to go to Expand on Feelings Page-->
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/expand_on_feelings"
         android:layout_width="390dp"
         android:layout_height="163dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/rounded_textbox"
         android:paddingStart="10dp"
+        android:paddingEnd="0dp"
         android:text="@string/expand_on_your_feelings"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro" />
-<!--Button to go to Expand on Feelings Page-->
+        app:layout_constraintTop_toBottomOf="@+id/intro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--Section colour divider to distinguish expand on feelings from goals section-->
+
     <ImageButton
         android:id="@+id/imagePlusIcon"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="332dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/plusicon"
-        android:contentDescription="@null"
+        android:contentDescription="@string/imageplusicon"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
-<!--Section colour divider to distinguish expand on feelings from goals section-->
+        app:layout_constraintBottom_toBottomOf="@+id/expand_on_feelings"
+        app:layout_constraintEnd_toEndOf="@+id/expand_on_feelings"
+        app:layout_constraintStart_toStartOf="@+id/expand_on_feelings"
+        app:layout_constraintTop_toTopOf="@+id/expand_on_feelings" />
+
     <ImageView
         android:id="@+id/goalsPageBG"
         android:layout_width="match_parent"
         android:layout_height="384dp"
         android:background="@drawable/transparent_white_box"
-        android:contentDescription="@null"
+        android:contentDescription="@string/goalspagesectionbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expand_on_feelings"
         app:layout_constraintVertical_bias="1.0" />
 
 <!--Checklist-->
+
+    <!--Button to go to Goals Page-->
+
+    <!--Example goals-->
+
+
+    <!--Example of how user can add their own goal-->
+
+    <!--Nav bar components-->
+
     <ImageButton
         android:id="@+id/imageCross"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/cross"
-        android:contentDescription="@null"
+        android:contentDescription="@string/imagecrosschecklist"
         android:elevation="10dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintEnd_toEndOf="@+id/goalsPageBG"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.179" />
 
     <ImageButton
         android:id="@+id/imageCross2"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/cross"
-        android:contentDescription="@null"
+        android:contentDescription="@string/imagecrosschecklist2"
         android:elevation="10dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/goalsPageBG"
         app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.353" />
 
     <ImageButton
         android:id="@+id/imageCross3"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="168dp"
         android:background="@drawable/cross"
-        android:contentDescription="@null"
-        android:elevation="10dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
-
-<!--Button to go to Goals Page-->
-    <ImageButton
-        android:id="@+id/goalsPageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/go"
-        android:contentDescription="@null"
+        android:contentDescription="@string/imagecrosschecklist3"
         android:elevation="10dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.042" />
 
-<!--Example goals-->
+    <ImageButton
+        android:id="@+id/goalsPageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/go"
+        android:contentDescription="@string/gotogoalspage"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/goalsPageBG"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.694" />
+
     <TextView
         android:id="@+id/goalsPageGoal1"
         android:layout_width="320dp"
@@ -146,15 +165,15 @@
         android:background="@drawable/transparent_white_box"
         android:elevation="10dp"
         android:paddingStart="10dp"
+        android:paddingEnd="0dp"
         android:text="@string/make_your_bed"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
-
+        app:layout_constraintBottom_toTopOf="@+id/goalsPageGoal2"
+        app:layout_constraintEnd_toStartOf="@+id/imageCross"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.882" />
 
     <TextView
         android:id="@+id/goalsPageGoal2"
@@ -163,13 +182,15 @@
         android:background="@drawable/transparent_white_box"
         android:elevation="10dp"
         android:paddingStart="10dp"
+        android:paddingEnd="0dp"
         android:text="@string/message_a_friend"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/goalsPageGoal3"
         app:layout_constraintEnd_toStartOf="@+id/imageCross2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageCross"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.94" />
 
     <TextView
         android:id="@+id/goalsPageGoal3"
@@ -178,14 +199,16 @@
         android:background="@drawable/transparent_white_box"
         android:elevation="10dp"
         android:paddingStart="10dp"
+        android:paddingEnd="0dp"
         android:text="@string/brush_your_teeth"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageCross"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageCross"
-        app:layout_constraintVertical_bias="0.4" />
-<!--Example of how user can add their own goal-->
+        app:layout_constraintBottom_toTopOf="@+id/goalsPageAddYourOwn"
+        app:layout_constraintEnd_toStartOf="@+id/imageCross3"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.961" />
+
     <TextView
         android:id="@+id/goalsPageAddYourOwn"
         android:layout_width="320dp"
@@ -193,15 +216,16 @@
         android:background="@drawable/transparent_white_box"
         android:elevation="10dp"
         android:paddingStart="10dp"
+        android:paddingEnd="0dp"
         android:text="@string/add_your_own"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageCross"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageCross"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintEnd_toStartOf="@+id/goalsPageButton"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/goalsPageBG"
+        app:layout_constraintTop_toTopOf="@+id/goalsPageBG"
+        app:layout_constraintVertical_bias="0.694" />
 
-<!--Nav bar components-->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="430dp"
@@ -219,9 +243,9 @@
         android:layout_width="67dp"
         android:layout_height="58dp"
         android:background="@drawable/baseline_volume_up_24"
+        android:contentDescription="@string/soundpagenav"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.086"
@@ -233,9 +257,9 @@
         android:layout_width="80dp"
         android:layout_height="60dp"
         android:background="@drawable/owlhead"
+        android:contentDescription="@string/homepagenav"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -246,9 +270,9 @@
         android:layout_width="79dp"
         android:layout_height="69dp"
         android:background="@drawable/baseline_checklist_rtl_24"
+        android:contentDescription="@string/goalspagenav"
         android:elevation="10dp"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.897"
