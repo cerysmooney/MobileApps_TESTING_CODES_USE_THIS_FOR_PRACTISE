@@ -3,7 +3,6 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.Window
 import android.widget.Button
 import android.widget.EditText
@@ -54,47 +53,44 @@ class ExpandOnFeelingsPage : ComponentActivity() {
         }
 
         //Calling BG background
-        val bgcolorsaved = bgValue.bgColourChange
+        val bgcolorsaved = BGValue.bgColourChange
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
         //Change background based on button
         awfulButton.setOnClickListener {
-            bgValue.bgColourChange = "#4C2899"
+            BGValue.bgColourChange = "#4C2899"
             colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
         }
         sadButton.setOnClickListener {
-            bgValue.bgColourChange = "#6A77F0"
+            BGValue.bgColourChange = "#6A77F0"
             colorBg.setBackgroundColor(Color.parseColor("#6A77F0"))
         }
         okayButton.setOnClickListener {
-            bgValue.bgColourChange = "F49B55"
+            BGValue.bgColourChange = "F49B55"
             colorBg.setBackgroundColor(Color.parseColor("#F49B55"))
         }
         happyButton.setOnClickListener {
-            bgValue.bgColourChange = "#FFB800"
+            BGValue.bgColourChange = "#FFB800"
             colorBg.setBackgroundColor(Color.parseColor("#FFB800"))
         }
         awesomeButton.setOnClickListener {
-            bgValue.bgColourChange = "#4CB543"
+            BGValue.bgColourChange = "#4CB543"
             colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
         }
-
-        //Change the background colour on log for across the app
-        Log.d("expand", "color check: $bgcolorsaved")
 
         //Save button goes to home page
         val goToHomePage = findViewById<Button>(R.id.saveButton)
         goToHomePage.setOnClickListener {
-           val intent = Intent(this, HomePage::class.java)
-            startActivity(intent)
+           val toHomePageSave = Intent(this, HomePage::class.java)
+            startActivity(toHomePageSave)
         }
 
         //Cancel button goes to home page
         val goToHomePage2 = findViewById<Button>(R.id.cancelButton)
         goToHomePage2.setOnClickListener {
-           val intent = Intent(this, HomePage::class.java)
-            startActivity(intent)
+           val toHomePageCancel = Intent(this, HomePage::class.java)
+            startActivity(toHomePageCancel)
         }
     }
 

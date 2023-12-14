@@ -3,9 +3,7 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -32,7 +30,6 @@ class ReflectionPage : ComponentActivity() {
         overrideActivityTransition( OVERRIDE_TRANSITION_OPEN, R.anim.slide_in_right, R.anim.slide_out_left)
 
         //Creating variables for the buttons and text box
-        val editText = findViewById<EditText>(R.id.reflectionPageTextbox)
         val awfulButton = findViewById<Button>(R.id.awfulButton)
         val sadButton = findViewById<Button>(R.id.sadButton)
         val okayButton = findViewById<Button>(R.id.okayButton)
@@ -50,34 +47,31 @@ class ReflectionPage : ComponentActivity() {
 
 
         //Change background based on what button is selected
-        val bgcolorsaved = bgValue.bgColourChange
-
+        val bgcolorsaved = BGValue.bgColourChange
         val colorBg = findViewById<ConstraintLayout>(R.id.expand_on_feelings_colour)
         colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
         //Set up buttons to change the background of the page
         awfulButton.setOnClickListener {
-            bgValue.bgColourChange = "#4C2899"
-            colorBg.setBackgroundColor(Color.parseColor("#4C2899"))
+            BGValue.bgColourChange = "#4C2899"
+            colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
         }
         sadButton.setOnClickListener {
-            bgValue.bgColourChange = "#6A77F0"
-            colorBg.setBackgroundColor(Color.parseColor("#6A77F0"))
+            BGValue.bgColourChange = "#6A77F0"
+            colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
         }
         okayButton.setOnClickListener {
-            bgValue.bgColourChange = "F49B55"
-            colorBg.setBackgroundColor(Color.parseColor("#F49B55"))
+            BGValue.bgColourChange = "F49B55"
+            colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
         }
         happyButton.setOnClickListener {
-            bgValue.bgColourChange = "#FFB800"
-            colorBg.setBackgroundColor(Color.parseColor("#FFB800"))
+            BGValue.bgColourChange = "#FFB800"
+            colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
         }
         awesomeButton.setOnClickListener {
-            bgValue.bgColourChange = "#4CB543"
-            colorBg.setBackgroundColor(Color.parseColor("#4CB543"))
+            BGValue.bgColourChange = "#4CB543"
+            colorBg.setBackgroundColor(Color.parseColor(bgcolorsaved))
         }
-
-        Log.d("expand", "color check: $bgcolorsaved")
 
         //Creating button to save and go to the homepage
         val goToHomePage = findViewById<Button>(R.id.saveButton)

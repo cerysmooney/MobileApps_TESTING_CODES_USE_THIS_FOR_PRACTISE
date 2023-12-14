@@ -5,12 +5,10 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.Window
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.constraintlayout.widget.ConstraintLayout
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -19,16 +17,16 @@ import java.util.Date
 class HomePage : ComponentActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
-    private val CROSS1_KEY = "cross1_key"
-    private val CROSS2_KEY = "cross2_key"
-    private val CROSS3_KEY = "cross3_key"
+    private val cross1KEY = "cross1_key"
+    private val cross2KEY = "cross2_key"
+    private val cross3KEY = "cross3_key"
 
     // Declare boolean variables to track the state of each button
     private var isCross1Checked = false
     private var isCross2Checked = false
     private var isCross3Checked = false
 
-    @OptIn(ExperimentalMaterial3Api::class)    // ask luke about
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -43,7 +41,7 @@ class HomePage : ComponentActivity() {
         setContentView(R.layout.home_page)
 
         //BG background
-        val bgcolorsaved = bgValue.bgColourChange
+        val bgcolorsaved = BGValue.bgColourChange
         val checkcolor = findViewById<ConstraintLayout>(R.id.homePageLayout)
         checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
@@ -63,9 +61,9 @@ class HomePage : ComponentActivity() {
         val imageCross3 = findViewById<ImageButton>(R.id.imageCross3)
 
         // Retrieve the saved state for each button
-        isCross1Checked = sharedPreferences.getBoolean(CROSS1_KEY, false)
-        isCross2Checked = sharedPreferences.getBoolean(CROSS2_KEY, false)
-        isCross3Checked = sharedPreferences.getBoolean(CROSS3_KEY, false)
+        isCross1Checked = sharedPreferences.getBoolean(cross1KEY, false)
+        isCross2Checked = sharedPreferences.getBoolean(cross2KEY, false)
+        isCross3Checked = sharedPreferences.getBoolean(cross3KEY, false)
 
         // Set the initial background state for each button
         updateButtonState(imageCross, isCross1Checked)
@@ -76,19 +74,19 @@ class HomePage : ComponentActivity() {
         imageCross.setOnClickListener {
             isCross1Checked = !isCross1Checked
             updateButtonState(imageCross, isCross1Checked)
-            saveState(CROSS1_KEY, isCross1Checked)
+            saveState(cross1KEY, isCross1Checked)
         }
 
         imageCross2.setOnClickListener {
             isCross2Checked = !isCross2Checked
             updateButtonState(imageCross2, isCross2Checked)
-            saveState(CROSS2_KEY, isCross2Checked)
+            saveState(cross2KEY, isCross2Checked)
         }
 
         imageCross3.setOnClickListener {
             isCross3Checked = !isCross3Checked
             updateButtonState(imageCross3, isCross3Checked)
-            saveState(CROSS3_KEY, isCross3Checked)
+            saveState(cross3KEY, isCross3Checked)
         }
 
 
@@ -100,25 +98,16 @@ class HomePage : ComponentActivity() {
         }
 
         //Displaying hello and the name chosen from the name page
-        //val name = intent.getStringExtra("textSave")
-        //Log.d("HomePage", "name: $name")
         val callName = NameValue.nameData
-        Log.d("HomePage", "callName: $callName")
         findViewById<TextView>(R.id.intro).apply {
-            text = "Hello " + callName
+            text = getString(R.string.hello_with_space) + callName
         }
-
-        //Log.d("HomePage","name: $callName")
-
 
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener {
-//            val fade: Transition = TransitionInflater.from(this).inflateTransition(R.transition.fade_transition)
-//            fade.duration = 5000
-//            window.exitTransition = fade
-            val intent = Intent(this, ExpandOnFeelingsPage::class.java)
-            startActivity(intent)
+            val expandOnFeelingsPageScreen = Intent(this, ExpandOnFeelingsPage::class.java)
+            startActivity(expandOnFeelingsPageScreen)
         }
 
 
@@ -150,60 +139,10 @@ class HomePage : ComponentActivity() {
         }
     }
 
-        private fun saveState(key: String, value: Boolean) {
-            sharedPreferences.edit().putBoolean(key, value).apply()
-        }
+    private fun saveState(key: String, value: Boolean) {
+        sharedPreferences.edit().putBoolean(key, value).apply()
     }
-
-
-
-
-//    @OptIn(ExperimentalMaterial3Api::class)
-//    @Composable
-//    fun ExpandableCard(){
-//        val shapes = Shapes(
-//            small = RoundedCornerShape(4.dp),
-//            medium = RoundedCornerShape(4.dp),
-//            large = RoundedCornerShape(0.dp)
-//        )
-//        var expandedState by remember { mutableStateOf(false) }
-//
-//        Card(
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .animateContentSize(
-//                    animationSpec = tween(
-//                        delayMillis = 300,
-//                        easing = LinearOutSlowInEasing
-//                    )
-//                ),
-//            shape = shapes.medium,
-//            onClick = {
-//                expandedState = !expandedState
-//            }
-//        ) {
-//            Column(
-//                modifier = Modifier
-//                    .fillMaxWidth()
-//                    .padding(12.dp)
-//            ) {
-//                Text(
-//                    text = "GOALS FOR THE DAY!",
-//                    fontSize = MaterialTheme.typography.headlineMedium.fontSize,
-//                    fontWeight = FontWeight.Bold,
-//                    textAlign = TextAlign.Center
-//                )
-//            }
-//        }
-//    }
-//    @ExperimentalMaterial3Api
-//    @Composable
-//    @Preview
-//    fun ExpandableCardPreview(){
-//        ExpandableCard()
-//    }
-//}
-
+}
 
 
 

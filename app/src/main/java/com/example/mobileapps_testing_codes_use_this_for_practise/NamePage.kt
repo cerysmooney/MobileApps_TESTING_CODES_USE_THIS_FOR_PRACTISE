@@ -4,7 +4,6 @@ package com.example.mobileapps_testing_codes_use_this_for_practise
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.ComponentActivity
@@ -26,7 +25,7 @@ class NamePage : ComponentActivity() {
         setContentView(R.layout.name_page)
 
         // Calling variables to sav bg colour from previous page
-        val bgcolorsaved = bgValue.bgColourChange
+        val bgcolorsaved = BGValue.bgColourChange
         val editText = findViewById<EditText>(R.id.enterName)
         val checkcolor = findViewById<ConstraintLayout>(R.id.namePageLayout)
 
@@ -39,14 +38,11 @@ class NamePage : ComponentActivity() {
 
             // save entered name from EditText
             NameValue.nameData = editText.text.toString()
-            val setName = NameValue.nameData
-            Log.d("NamePage", "setName: $setName")
 
             // Next button goes to homepage
             Intent(this, HomePage::class.java).also{
                 startActivity(it)
             }
-
         }
 
         // Button to go back to previous page

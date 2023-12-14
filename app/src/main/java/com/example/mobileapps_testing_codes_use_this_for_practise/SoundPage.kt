@@ -29,7 +29,7 @@ class SoundPage : ComponentActivity() {
         setContentView(R.layout.sound_page)
 
         //BG background
-        val bgcolorsaved = bgValue.bgColourChange
+        val bgcolorsaved = BGValue.bgColourChange
         val checkcolor = findViewById<ConstraintLayout>(R.id.sound_page_layout)
         checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
@@ -115,8 +115,8 @@ class SoundPage : ComponentActivity() {
 
         val backButton = findViewById<Button>(R.id.cancelButton)
         backButton.setOnClickListener {
-            val Intent = Intent(this, HomePage::class.java)
-            startActivity(Intent)
+            val homePageScreen = Intent(this, HomePage::class.java)
+            startActivity(homePageScreen)
 
             currentMediaPlayer?.let {
                 if (it.isPlaying) {

@@ -13,7 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 // Global variable to save BG colour
-class bgValue{
+class BGValue{
     companion object{
         var bgColourChange: String = ""
     }
@@ -38,18 +38,18 @@ class MainActivity : ComponentActivity() {
 
         //Setting up variables for background changing
         var backgroundColor = "#F49B55"
-        bgValue.bgColourChange = backgroundColor
+        BGValue.bgColourChange = backgroundColor
 
         //Setting up seekbar
         seek?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
                 Log.d("mainactivity", "seek value: $progress")
                 when {
-                    progress <= 0 -> text.text = "AWFUL"
-                    progress <= 1 -> text.text = "SAD"
-                    progress <= 2 -> text.text = "OKAY"
-                    progress <= 3 -> text.text = "HAPPY"
-                    else -> text.text = "AWESOME"
+                    progress <= 0 -> text.text = getString(R.string.awful)
+                    progress <= 1 -> text.text = getString(R.string.sad)
+                    progress <= 2 -> text.text = getString(R.string.okay)
+                    progress <= 3 -> text.text = getString(R.string.happy)
+                    else -> text.text = getString(R.string.awesome)
                 }
                 when {
                     progress <= 0 -> owlIMG.setImageResource(R.drawable.awful_owl)
@@ -80,21 +80,14 @@ class MainActivity : ComponentActivity() {
 
         //Button for moving onto the next page
         val namePageButton = findViewById<Button>(R.id.button)
-
         namePageButton.setOnClickListener {
 
             //Set variable to keep across onto next page
-            bgValue.bgColourChange = backgroundColor
-            val checkColor = bgValue.bgColourChange
+            BGValue.bgColourChange = backgroundColor
 
             //Button for moving onto next page
-            Log.d("mainactivity", "color check: $checkColor")
-            val Intent = Intent(this, NamePage::class.java ).also {
-                //it.putExtra("saveBackground", backgroundColor)
-                startActivity(it)
-
-            }
-
+            val namePageScreen = Intent(this, NamePage::class.java )
+            startActivity(namePageScreen)
         }
 
         //Skip Button to allow people to skip the decision

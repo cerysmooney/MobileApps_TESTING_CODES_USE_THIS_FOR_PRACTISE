@@ -24,6 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088" />
+
 <!--Subhead-->
     <TextView
         android:id="@+id/textView8"
@@ -38,6 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.255" />
+
 <!--Button to go to homepage-->
     <Button
         android:id="@+id/cancelButton"
@@ -59,6 +61,7 @@
         android:layout_height="65dp"
         android:background="@drawable/transparent_textbox_with_stroke"
         android:ems="10"
+        android:autofillHints="@null"
         android:hint="@string/type_your_goal"
         android:inputType="textMultiLine"
         android:lines="4"
@@ -80,6 +83,7 @@
         android:layout_height="65dp"
         android:background="@drawable/transparent_textbox_with_stroke"
         android:ems="10"
+        android:autofillHints="@null"
         android:hint="@string/type_your_goal"
         android:inputType="textMultiLine"
         android:lines="4"
@@ -101,6 +105,7 @@
         android:layout_height="65dp"
         android:background="@drawable/transparent_textbox_with_stroke"
         android:ems="10"
+        android:autofillHints="@null"
         android:hint="@string/type_your_goal"
         android:inputType="textMultiLine"
         android:lines="4"
@@ -122,6 +127,7 @@
         android:layout_height="65dp"
         android:background="@drawable/transparent_textbox_with_stroke"
         android:ems="10"
+        android:autofillHints="@null"
         android:hint="@string/type_your_goal"
         android:inputType="textMultiLine"
         android:lines="4"
@@ -156,6 +162,7 @@
         android:background="@drawable/baseline_volume_up_24"
         android:elevation="10dp"
         android:scaleType="centerInside"
+        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.086"
@@ -170,10 +177,12 @@
         android:background="@drawable/owlheadokay"
         android:elevation="10dp"
         android:scaleType="centerInside"
+        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
+
 <!--Nav button (greyed out) to show user is on goals page-->
     <ImageButton
         android:id="@+id/goalsPageButtonNav"
@@ -182,6 +191,7 @@
         android:background="@drawable/baseline_checklist_rtl_24_highlight"
         android:elevation="10dp"
         android:scaleType="centerInside"
+        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.897"
@@ -193,6 +203,7 @@
         android:layout_width="211dp"
         android:layout_height="210dp"
         android:src="@drawable/owlpencil"
+        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.921"

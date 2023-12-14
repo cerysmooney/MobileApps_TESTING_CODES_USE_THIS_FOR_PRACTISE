@@ -26,7 +26,7 @@ class GoalsPage : ComponentActivity() {
         setContentView(R.layout.goals_page)
 
         //BG background
-        val bgcolorsaved = bgValue.bgColourChange
+        val bgcolorsaved = BGValue.bgColourChange
         val checkcolor = findViewById<ConstraintLayout>(R.id.goals_page_layout)
         checkcolor.setBackgroundColor(Color.parseColor(bgcolorsaved))
 
@@ -34,30 +34,22 @@ class GoalsPage : ComponentActivity() {
         // Nav button to go to homepage
         val toHomePageButton = findViewById<ImageButton>(R.id.homePageButtonNav)
         toHomePageButton.setOnClickListener {
-            val Intent = Intent(this, HomePage::class.java).also {
-                //it.putExtra("saveBackground", backgroundColor)
-                startActivity(it)
-            }
-
+            val homePageScreen = Intent(this, HomePage::class.java)
+            startActivity(homePageScreen)
         }
 
-        // Nav button to go to soundpage
+        // Nav button to go to SoundPage
         val toSoundPageButton = findViewById<ImageButton>(R.id.soundPageButtonNav)
         toSoundPageButton.setOnClickListener {
-            val Intent = Intent(this, SoundPage::class.java).also {
-                //it.putExtra("saveBackground", backgroundColor)
-                startActivity(it)
-            }
-
-
+            val soundPageScreen = Intent(this, SoundPage::class.java)
+            startActivity(soundPageScreen)
         }
-        // cancel button to go back to homepage
+
+        // Cancel button to go back to homepage
         val backToHomeButton = findViewById<Button>(R.id.cancelButton)
         backToHomeButton.setOnClickListener {
-            val Intent = Intent(this, HomePage::class.java).also {
-                //it.putExtra("saveBackground", backgroundColor)
-                startActivity(it)
-            }
+            val toHomeButtonScreen = Intent(this, HomePage::class.java)
+            startActivity(toHomeButtonScreen)
         }
     }
 }
