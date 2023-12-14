@@ -26,7 +26,6 @@ class HomePage : ComponentActivity() {
     private var isCross2Checked = false
     private var isCross3Checked = false
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -89,7 +88,6 @@ class HomePage : ComponentActivity() {
             saveState(cross3KEY, isCross3Checked)
         }
 
-
         // Button for getting goals page
         val goalsPageButton = findViewById<ImageButton>(R.id.goalsPageButton)
         goalsPageButton.setOnClickListener {
@@ -126,8 +124,6 @@ class HomePage : ComponentActivity() {
             val goalsPageScreen = Intent(this, GoalsPage::class.java)
             startActivity(goalsPageScreen)
         }
-
-
     }
 
     //Updating the function of the button
