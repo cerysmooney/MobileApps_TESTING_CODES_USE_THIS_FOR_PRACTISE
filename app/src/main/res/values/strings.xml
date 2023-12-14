@@ -48,5 +48,11 @@
     <string name="playsoundokay">playSoundokay</string>
     <string name="playsoundhappy">playsoundhappy</string>
     <string name="branchowl">branchOwl</string>
+    <string name="imagecrosschecklist">imageCrossChecklist</string>
+    <string name="imagecrosschecklist2">imageCrossChecklist2</string>
+    <string name="imagecrosschecklist3">imageCrossChecklist3</string>
+    <string name="imageplusicon">imagePlusIcon</string>
+    <string name="goalspagesectionbg">goalsPageSectionBg</string>
+    <string name="gotogoalspage">goToGoalsPage</string>
     <!--    <string name="continue">Continue</string>-->
 </resources>
