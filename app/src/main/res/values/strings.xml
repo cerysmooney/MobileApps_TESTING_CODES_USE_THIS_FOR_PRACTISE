@@ -41,5 +41,8 @@
     <string name="type_your_goal">Type Your Goal</string>
     <string name="to_home">To home</string>
     <string name="reflection">Reflection</string>
+    <string name="soundpagenav">soundPageNav</string>
+    <string name="homepagenav">homePageNav</string>
+    <string name="goalspagenav">goalsPageNav</string>
     <!--    <string name="continue">Continue</string>-->
 </resources>
