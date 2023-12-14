@@ -41,12 +41,27 @@
         app:layout_constraintVertical_bias="0.255" />
 
 <!--Button to go to homepage-->
+
+    <!--Write your own goals boxes-->
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="109dp"
         android:layout_height="52dp"
         android:background="@drawable/button_background_dark"
-        android:text="@string/to_home"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
+        android:background="@drawable/button_background_dark"
+        android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
@@ -54,7 +69,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-<!--Write your own goals boxes-->
     <EditText
         android:id="@+id/typeYourGoal1"
         android:layout_width="360dp"
@@ -78,7 +92,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <EditText
-        android:id="@+id/typeYourGoal4"
+        android:id="@+id/typeYourGoal2"
         android:layout_width="360dp"
         android:layout_height="65dp"
         android:background="@drawable/transparent_textbox_with_stroke"
@@ -97,7 +111,7 @@
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.65" />
 
     <EditText
         android:id="@+id/typeYourGoal3"
@@ -122,7 +136,7 @@
         app:layout_constraintVertical_bias="0.764" />
 
     <EditText
-        android:id="@+id/typeYourGoal2"
+        android:id="@+id/typeYourGoal4"
         android:layout_width="360dp"
         android:layout_height="65dp"
         android:background="@drawable/transparent_textbox_with_stroke"
@@ -141,7 +155,7 @@
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.879" />
 <!--Nav Bar components -->
     <TextView
         android:id="@+id/textView6"
