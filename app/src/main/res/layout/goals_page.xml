@@ -18,7 +18,6 @@
         android:text="@string/title_activity_goals_page"
         android:textColor="@color/white"
         android:textSize="50sp"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
