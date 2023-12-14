@@ -103,6 +103,12 @@ class HomePage : ComponentActivity() {
             text = getString(R.string.hello_with_space) + callName
         }
 
+        //Displaying Text from Expand on Feelings Page
+        val callFeelings = EoFData.expandonFeelingsTextData
+        findViewById<TextView>(R.id.expand_on_feelings).apply {
+            text = getString(R.string.expand_feelings_pg) + callFeelings
+        }
+
         //Button for Expanding on Feelings
         val expandOnFeelingsPageButton = findViewById<ImageButton>(R.id.imagePlusIcon)
         expandOnFeelingsPageButton.setOnClickListener {

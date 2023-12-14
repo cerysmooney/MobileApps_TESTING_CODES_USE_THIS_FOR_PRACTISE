@@ -40,7 +40,7 @@
 
     <!--    Box users can write in -->
     <EditText
-        android:id="@+id/enterName"
+        android:id="@+id/feelingsexpansion"
         android:layout_width="351dp"
         android:layout_height="200dp"
         android:autofillHints="@null"

@@ -39,7 +39,7 @@
 <!--Expand on feelings section-->
     <!--Button to go to Expand on Feelings Page-->
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/expand_on_feelings"
         android:layout_width="390dp"
         android:layout_height="163dp"
         android:layout_marginTop="70dp"
@@ -55,19 +55,24 @@
         app:layout_constraintTop_toBottomOf="@+id/intro"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!--Section colour divider to distinguish expand on feelings from goals section-->
+
     <ImageButton
         android:id="@+id/imagePlusIcon"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="332dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/plusicon"
         android:contentDescription="@string/imageplusicon"
         android:elevation="10dp"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/expand_on_feelings"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/expand_on_feelings"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
-<!--Section colour divider to distinguish expand on feelings from goals section-->
+
     <ImageView
         android:id="@+id/goalsPageBG"
         android:layout_width="match_parent"
