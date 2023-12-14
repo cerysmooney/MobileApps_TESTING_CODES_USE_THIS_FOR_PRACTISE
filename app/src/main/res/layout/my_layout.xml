@@ -42,19 +42,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.151" />
 
+    <!--range of emotions text display-->
     <ImageView
         android:id="@+id/owl_images"
         android:layout_width="177dp"
         android:layout_height="549dp"
-        android:src="@drawable/okowl"
         android:contentDescription="@null"
+        android:src="@drawable/okowl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.285" />
 
-<!--range of emotions text display-->
     <TextView
         android:id="@+id/emotions"
         android:layout_width="wrap_content"
