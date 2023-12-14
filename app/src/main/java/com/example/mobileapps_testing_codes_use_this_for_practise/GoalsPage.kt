@@ -10,6 +10,7 @@ import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
+//Classes for storing data
 class GPData1 {
     companion object {
         var goalsData1: String = ""
@@ -55,6 +56,7 @@ class GoalsPage : ComponentActivity() {
         val goal3 = findViewById<EditText>(R.id.typeYourGoal3)
         val goal4 = findViewById<EditText>(R.id.typeYourGoal4)
 
+        //Setting Goals to save text
         val setGoal1 = GPData1.goalsData1
         findViewById<EditText>(R.id.typeYourGoal1).apply {
             setText(setGoal1)
@@ -105,6 +107,7 @@ class GoalsPage : ComponentActivity() {
         val savetoHomeButton = findViewById<Button>(R.id.saveButton)
         savetoHomeButton.setOnClickListener {
 
+            //Saving data when button is clicked
             GPData1.goalsData1 = goal1.text.toString()
             GPData2.goalsData2 = goal2.text.toString()
             GPData3.goalsData3 = goal3.text.toString()
