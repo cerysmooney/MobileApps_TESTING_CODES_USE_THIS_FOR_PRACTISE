@@ -30,6 +30,7 @@
         android:text="@string/here_s_some_sounds_we_think_you_ll_enjoy"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
