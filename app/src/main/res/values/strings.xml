@@ -11,7 +11,7 @@
     <string name="hello">Hello…</string>
     <string name="hello_with_space">Hello\u0020</string>
     <string name="expand_on_your_feelings">Expand On Your Feelings</string>
-    <string name="expand_feelings_pg">Expand On Your Feelings:\n\n</string>
+    <string name="expand_feelings_pg">How are you feeling?:\n\n</string>
     <string name="back">Back</string>
     <string name="title_activity_sound_page">SoundPage</string>
     <string name="title_activity_main2">MainActivity2</string>
