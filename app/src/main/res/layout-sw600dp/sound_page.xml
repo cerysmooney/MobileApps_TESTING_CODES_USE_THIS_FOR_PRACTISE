@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sound_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/okay"
+    tools:context=".SoundPage">
+    <!--Header-->
+    <!--Subhead-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_to_relax"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/here_s_some_sounds_we_think_you_ll_enjoy"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <!--Sound Buttons-->
+
+
+    <ImageButton
+        android:id="@+id/playSoundOkay"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/rounded_circle_okay"
+        android:contentDescription="@string/playsoundokay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <ImageButton
+        android:id="@+id/playSoundHappy"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/rounded_circle_awesome"
+        android:contentDescription="@string/playsoundhappy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <ImageButton
+        android:id="@+id/playSoundSad"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/rounded_circle_awful"
+        android:contentDescription="@string/playsoundsad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+
+    <!--Stop playing music button-->
+    <!--Back to home page button-->
+    <!--Owl vector-->
+
+    <!--Nav Bar contents-->
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="207dp"
+        android:layout_height="83dp"
+        android:background="@drawable/button_background_dark"
+        android:text="@string/stop_music"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="207dp"
+        android:layout_height="83dp"
+        android:background="@drawable/button_background_dark"
+        android:text="@string/to_home"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="543dp"
+        android:layout_height="508dp"
+        android:background="@drawable/branchowl"
+        android:contentDescription="@string/branchowl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="904dp"
+        android:layout_height="119dp"
+        android:background="@drawable/only_top_rounded_textbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <!--Nav icon for sound page (greyed out to show they're on that page)-->
+    <ImageButton
+        android:id="@+id/soundPageButtonNav"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        android:background="@drawable/baseline_volume_up_24_highlight"
+        android:contentDescription="@string/soundpagenav"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+    <!--Nav icon for home page-->
+    <ImageButton
+        android:id="@+id/homePageButtonNav"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/owlheadokay"
+        android:contentDescription="@string/homepagenav"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+    <!--Nav icon for goals page-->
+    <ImageButton
+        android:id="@+id/goalsPageButtonNav"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:background="@drawable/baseline_checklist_rtl_24"
+        android:contentDescription="@string/goalspagenav"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

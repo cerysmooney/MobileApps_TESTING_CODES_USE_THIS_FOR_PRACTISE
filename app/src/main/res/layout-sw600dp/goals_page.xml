@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/goals_page_layout"
+    android:background="@color/okay"
+    tools:context=".GoalsPage">
+
+    <!-- Headings -->
+
+    <!--Subhead-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="466dp"
+        android:layout_height="115dp"
+        android:text="@string/title_activity_goals_page"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <!--Button to go to homepage-->
+
+    <!--Write your own goals boxes-->
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="405dp"
+        android:layout_height="112dp"
+        android:text="@string/goals_page_subheading"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="164dp"
+        android:layout_height="83dp"
+        android:textSize="30sp"
+        android:background="@drawable/button_background_dark"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="164dp"
+        android:layout_height="83dp"
+        android:textSize="30sp"
+        android:background="@drawable/button_background_dark"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/typeYourGoal1"
+        android:layout_width="706dp"
+        android:layout_height="90dp"
+        android:textSize="36sp"
+        android:autofillHints="@null"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <EditText
+        android:id="@+id/typeYourGoal2"
+        android:layout_width="706dp"
+        android:layout_height="90dp"
+        android:textSize="36sp"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:autofillHints="@null"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <EditText
+        android:id="@+id/typeYourGoal3"
+        android:layout_width="706dp"
+        android:layout_height="90dp"
+        android:textSize="36sp"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:autofillHints="@null"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <EditText
+        android:id="@+id/typeYourGoal4"
+        android:layout_width="706dp"
+        android:layout_height="90dp"
+        android:textSize="36sp"
+        android:background="@drawable/transparent_textbox_with_stroke"
+        android:ems="10"
+        android:autofillHints="@null"
+        android:hint="@string/type_your_goal"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
+<!--Nav Bar components -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="904dp"
+        android:layout_height="119dp"
+        android:background="@drawable/only_top_rounded_textbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+<!--Nav button for sound page-->
+    <ImageButton
+        android:id="@+id/soundPageButtonNav"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        android:background="@drawable/baseline_volume_up_24"
+        android:contentDescription="@string/soundpagenav"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+<!--Nav button for homepage-->
+    <ImageButton
+        android:id="@+id/homePageButtonNav"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/owlheadokay"
+        android:contentDescription="@string/homepagenav"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+<!--Nav button (greyed out) to show user is on goals page-->
+    <ImageButton
+        android:id="@+id/goalsPageButtonNav"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:background="@drawable/baseline_checklist_rtl_24_highlight"
+        android:contentDescription="@string/goalspagenav"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+<!--Owl vector-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="362dp"
+        android:layout_height="393dp"
+        android:contentDescription="@null"
+        android:src="@drawable/owlpencil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
