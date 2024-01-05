@@ -4,9 +4,9 @@
     package="com.example.mobileapps_testing_codes_use_this_for_practise">
 
     <supports-screens
-        android:smallScreens="true"
+        android:smallScreens="false"
         android:normalScreens="true"
-        android:largeScreens="false"
+        android:largeScreens="true"
         android:xlargeScreens="false"/>
 
     <application
